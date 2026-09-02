@@ -2,6 +2,8 @@ import { NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
 
+export const dynamic = 'force-dynamic';
+
 const configFilePath = path.join(process.cwd(), 'src/lib/catalog/data/master_config.json');
 
 export async function GET() {
