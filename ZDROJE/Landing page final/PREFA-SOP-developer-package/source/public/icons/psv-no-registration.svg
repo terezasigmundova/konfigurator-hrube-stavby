@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="32" viewBox="0 0 48 32" style="color:#5E5C55">
+      <g fill="none" stroke="currentColor" stroke-width="1.15" stroke-linecap="butt" stroke-linejoin="miter">
+        <path d="M2 8h18M2 12h18M2 18h18M2 24h18M11 8 5 4.5M8.5 12 4 15.5M11 18l5 4"/>
+        <path d="M20 8h4M24 6h19v17H24zM27 19c.7-2.4 2.2-3.6 4.5-3.6S35.3 16.6 36 19M31.5 10.2a2.2 2.2 0 1 1 0 4.4 2.2 2.2 0 0 1 0-4.4ZM38 10h3M39.5 8.5v3M20 24h27"/>
+      </g>
+    
+</svg>

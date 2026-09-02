@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "Gotham UI";
+  src: url("/fonts/gotham-web-book.otf") format("opentype");
+  font-style: normal;
+  font-weight: 300 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham UI";
+  src: url("/fonts/gotham-web-bold.otf") format("opentype");
+  font-style: normal;
+  font-weight: 600 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Flama UI";
+  src: url("/fonts/flama-web-light.otf") format("opentype");
+  font-style: normal;
+  font-weight: 300 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Flama UI";
+  src: url("/fonts/flama-web-medium.otf") format("opentype");
+  font-style: normal;
+  font-weight: 600 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Justus UI";
+  src: url("/fonts/justus-web-light.otf") format("opentype");
+  font-style: normal;
+  font-weight: 300 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Justus UI";
+  src: url("/fonts/justus-web-bold.otf") format("opentype");
+  font-style: normal;
+  font-weight: 600 800;
+  font-display: swap;
+}

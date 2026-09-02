@@ -1,0 +1,60 @@
+{
+  "panel_id": "1.1",
+  "standard_id": "PREFA_SOPIK_RENDER_STD_01",
+  "status": "PASS",
+  "declared_total_thickness_mm": 341.0,
+  "calculated_total_thickness_mm": 341.0,
+  "logical_layer_count": 10,
+  "geometry_object_count": 12,
+  "geometry_sha256": "d51ecc19bec9324c371e05ace2c04cf063c9dabcfa017a4018edec878ba2b0ed",
+  "checks": {
+    "declared_equals_geometry": true,
+    "declared_equals_additive_sum": true,
+    "fermacell_actual_thickness_12_5": true,
+    "service_frame_60x40": true,
+    "structural_frame_60x160": true,
+    "hosted_infill_not_double_counted": true
+  },
+  "layer_ranges_mm": {
+    "L01": [
+      0.0,
+      12.5
+    ],
+    "L02": [
+      12.5,
+      52.5
+    ],
+    "L03": [
+      12.5,
+      52.5
+    ],
+    "L04": [
+      52.5,
+      65.0
+    ],
+    "L05": [
+      65.0,
+      65.5
+    ],
+    "L06": [
+      65.5,
+      225.5
+    ],
+    "L07": [
+      65.5,
+      225.5
+    ],
+    "L08": [
+      225.5,
+      238.0
+    ],
+    "L09": [
+      238.0,
+      338.0
+    ],
+    "L10": [
+      338.0,
+      341.0
+    ]
+  }
+}

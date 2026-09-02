@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="img" aria-labelledby="title-stair-opening">
+  <title id="title-stair-opening">Schodišťový otvor</title>
+  <rect x="3" y="4" width="18" height="16" rx="1" stroke-dasharray="3 2" />
+  <path d="M6 17h3v-3h3v-3h3V8h3" />
+  <path d="m16 6 2 2-2 2" />
+</svg>

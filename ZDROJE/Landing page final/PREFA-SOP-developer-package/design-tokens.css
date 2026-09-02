@@ -1,0 +1,37 @@
+:root {
+  --prefa-paper: #f7f5f1;
+  --prefa-white: #ffffff;
+  --prefa-linen: #e7e0d5;
+  --prefa-line: #ded8cf;
+  --prefa-line-soft: #e9e4dc;
+  --prefa-stone: #9e998e;
+  --prefa-cedar: #5e5c55;
+  --prefa-ink: #292527;
+  --prefa-aqua: #759192;
+  --prefa-amber: #d39a52;
+
+  --prefa-font-display: "Gotham UI", Arial, sans-serif;
+  --prefa-font-ui: "Flama UI", Arial, sans-serif;
+  --prefa-font-note: "Justus UI", Georgia, serif;
+
+  --prefa-space-1: 8px;
+  --prefa-space-2: 12px;
+  --prefa-space-3: 16px;
+  --prefa-space-4: 20px;
+  --prefa-space-5: 24px;
+  --prefa-space-6: 32px;
+  --prefa-space-7: 40px;
+  --prefa-space-8: 48px;
+  --prefa-space-9: 64px;
+
+  --prefa-border: 1px solid var(--prefa-line);
+  --prefa-radius: 2px;
+  --prefa-shadow-card: 0 12px 36px rgba(44, 39, 36, 0.06);
+  --prefa-shadow-raised: 0 18px 60px rgba(44, 39, 36, 0.14);
+
+  --prefa-header-height: 92px;
+  --prefa-work-header-height: 76px;
+  --prefa-work-footer-height: 88px;
+  --prefa-sidebar-width: 236px;
+  --prefa-catalog-width: 352px;
+}

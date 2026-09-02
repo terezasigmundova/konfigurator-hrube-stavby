@@ -1,0 +1,105 @@
+{
+  "schema_version": "1.1",
+  "panel_id": "1.4",
+  "category": "exterior_wall",
+  "name": "CLT masivní panel 84 mm, jednostranně pohledový, s elektroinstalační přípravou",
+  "units": "mm",
+  "reference_sample": {"width_mm": 625.0, "height_mm": 900.0},
+  "declared_delivered_thickness_mm": 84.0,
+  "delivery_note": "Dodávku tvoří samotný masivní CLT panel tloušťky 84 mm s projektově připravenými elektroinstalačními vývrty osazenými chráničkami pro vedení elektroinstalace a s vývrty pro následnou montáž elektroinstalačních krabic. Interiérová strana je dodávána v pohledové kvalitě, avšak bez dodatečného nátěru nebo jiné finální povrchové úpravy, není-li výslovně sjednána. Exteriérová strana je nepohledová a určená pro následné doplnění obálky stavby. Elektroinstalační krabice, kabeláž, koncové přístroje, jejich zapojení ani revize nejsou součástí dodávky panelu. Tepelná izolace, větrotěsná vrstva, podkladní rošt, fasáda ani jejich povrchové úpravy rovněž nejsou součástí dodávky.",
+  "electrical_preparation": {
+    "included": true,
+    "mounting_cavity_present": false,
+    "scope_basis": "schválená výrobní dokumentace, elektroprojekt, statické posouzení a CNC výrobní data",
+    "host_layer_ids": ["L01"],
+    "included_items": [
+      "projektově určené vývrty přímo v masivním CLT panelu",
+      "elektroinstalační chráničky vložené do vývrtů pro vedení elektroinstalace",
+      "vývrty pro následnou montáž elektroinstalačních krabic"
+    ],
+    "excluded_items": [
+      "elektroinstalační krabice",
+      "kabeláž",
+      "zásuvky, vypínače a další koncové přístroje",
+      "zapojení",
+      "revize elektroinstalace"
+    ],
+    "user_heading": "Elektroinstalační příprava je součástí CLT panelu",
+    "user_description": "Panel nemá montážní předstěnu. Elektroinstalační trasy jsou proto připraveny přímo v masivním CLT jako projektově určené vývrty osazené chráničkami. Součástí dodávky jsou rovněž vývrty pro následnou montáž elektroinstalačních krabic.",
+    "preview_note": "Referenční 3D výřez zobrazuje dvě vzorové svislé trasy s chráničkami Ø 20 mm. Vývrty pro krabice se v obecném výřezu nezobrazují; jejich počet a poloha se řídí konkrétním elektroprojektem."
+  },
+  "technical_basis": {
+    "construction": "Třívrstvý křížem lepený masivní dřevěný panel",
+    "wall_orientation": "Typ C – krycí lamely ve směru výšky stěnového panelu",
+    "project_specific_thickness": true,
+    "standard_variant_note": "Tloušťka 84 mm je projektově definovaná skladba PREFA ŠOPÍK. Aktuální standardní řada Stora Enso uvádí u třívrstvého typu C mimo jiné 80 a 90 mm, nikoli 84 mm.",
+    "technical_reference_url": "https://www.storaenso.com/en/products/mass-timber-construction/building-products/clt",
+    "surface_interior": "VI – pohledová kvalita",
+    "surface_exterior": "NVI – nepohledová kvalita",
+    "visual_face_representation": "Souvislá celistvá plocha masivního dřeva bez viditelných spár, drážek nebo rastru jednotlivých prken."
+  },
+  "electrical_preview_standard": {
+    "purpose": "Reprezentativní geometrie dvou svislých tras s chráničkami pro jednotný náhled konfigurátoru. Finální počet, průměr a poloha tras i vývrtů pro elektroinstalační krabice se řídí elektroprojektem, statickým posouzením a CNC výrobními daty.",
+    "axis": "z",
+    "diameter_mm": 20.0,
+    "through_height": true,
+    "conduit_included": true,
+    "box_mounting_bores_previewed": false,
+    "bores": [
+      {"id": "E01", "center_x_mm": 220.0, "center_y_mm": 42.0},
+      {"id": "E02", "center_x_mm": 405.0, "center_y_mm": 42.0}
+    ]
+  },
+  "layers": [
+    {
+      "id": "L01",
+      "order": 1,
+      "name": "Masivní třívrstvý CLT panel 84 mm",
+      "material_id": "clt_spruce_visual",
+      "geometry": "clt_panel",
+      "thickness_mm": 84.0,
+      "additive_to_total": true,
+      "exploded_group": 0,
+      "mass_kg_m2": 41.2,
+      "mass_basis": "Výpočtově z objemové hmotnosti 490 kg/m³ × 0,084 m.",
+      "lambda_w_mk": 0.12,
+      "fire_class": "D-s2, d0",
+      "function": "Nosná a ztužující obvodová stěna; vnitřní krycí vrstva současně vytváří přiznaný pohledový povrch. Projektově určené vývrty s chráničkami a vývrty pro krabice vytvářejí přípravu elektroinstalace přímo v masivním panelu.",
+      "lamellae": [
+        {
+          "id": "L01-A",
+          "name": "Vnitřní krycí lamela – pohledová",
+          "thickness_mm": 28.0,
+          "grain_direction": "vertical_z",
+          "surface_quality": "VI",
+          "material_id": "clt_spruce_visual",
+          "exploded_group": 0
+        },
+        {
+          "id": "L01-B",
+          "name": "Střední příčná lamela",
+          "thickness_mm": 28.0,
+          "grain_direction": "horizontal_x",
+          "surface_quality": "NVI",
+          "material_id": "clt_spruce_transverse",
+          "exploded_group": 1
+        },
+        {
+          "id": "L01-C",
+          "name": "Vnější krycí lamela – nepohledová",
+          "thickness_mm": 28.0,
+          "grain_direction": "vertical_z",
+          "surface_quality": "NVI",
+          "material_id": "clt_spruce_nonvisual",
+          "exploded_group": 2
+        }
+      ]
+    }
+  ],
+  "materials": {
+    "clt_spruce_visual": {"label": "CLT smrk – pohledová kvalita VI", "color": "#e7bd76", "opacity": 1.0},
+    "clt_spruce_transverse": {"label": "CLT smrk – příčná lamela", "color": "#d7a861", "opacity": 1.0},
+    "clt_spruce_nonvisual": {"label": "CLT smrk – nepohledová kvalita NVI", "color": "#c99b5c", "opacity": 1.0},
+    "clt_bore_shadow": {"label": "Vývrt s elektroinstalační chráničkou", "color": "#3a291c", "opacity": 1.0}
+  }
+}

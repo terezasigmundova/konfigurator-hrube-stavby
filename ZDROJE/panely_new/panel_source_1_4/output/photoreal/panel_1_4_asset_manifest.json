@@ -1,0 +1,141 @@
+{
+  "panel_id": "1.4",
+  "geometry_sha256": "ee19a200caf63afe0cd19b78b602535b5899e5a635688d1df9890771d2e220e6",
+  "composites": {
+    "full_png": "output/photoreal/panel_1_4_photoreal_full.png",
+    "full_webp": "output/photoreal/panel_1_4_photoreal_full.webp",
+    "assembled_png": "output/photoreal/panel_1_4_photoreal_assembled_cutaway.png",
+    "assembled_webp": "output/photoreal/panel_1_4_photoreal_assembled_cutaway.webp",
+    "exploded_png": "output/photoreal/panel_1_4_photoreal_exploded.png",
+    "exploded_webp": "output/photoreal/panel_1_4_photoreal_exploded.webp",
+    "layer_table_png": "output/panel_1_4_vrstvy_a_vlastnosti.png"
+  },
+  "visual_rules": {
+    "interior_face": "Souvislá celistvá plocha masivního dřeva bez viditelných spár, drážek nebo rastru prken.",
+    "cross_lamination_visibility": "Pouze na řezu, hranách a v rozloženém stavu."
+  },
+  "electrical_preview": {
+    "purpose": "Reprezentativní geometrie dvou svislých tras s chráničkami pro jednotný náhled konfigurátoru. Finální počet, průměr a poloha tras i vývrtů pro elektroinstalační krabice se řídí elektroprojektem, statickým posouzením a CNC výrobními daty.",
+    "axis": "z",
+    "diameter_mm": 20.0,
+    "through_height": true,
+    "conduit_included": true,
+    "box_mounting_bores_previewed": false,
+    "bores": [
+      {
+        "id": "E01",
+        "center_x_mm": 220.0,
+        "center_y_mm": 42.0
+      },
+      {
+        "id": "E02",
+        "center_x_mm": 405.0,
+        "center_y_mm": 42.0
+      }
+    ]
+  },
+  "layers": [
+    {
+      "state": "assembled",
+      "layer_id": "L01",
+      "sprite": "output/photoreal/layers/assembled/L01.webp",
+      "mask": "output/photoreal/masks/assembled/L01.png"
+    },
+    {
+      "state": "exploded",
+      "layer_id": "L01",
+      "sprite": "output/photoreal/layers/exploded/L01.webp",
+      "mask": "output/photoreal/masks/exploded/L01.png"
+    }
+  ],
+  "layer_definitions": [
+    {
+      "id": "L01",
+      "name": "Masivní třívrstvý CLT panel 84 mm",
+      "thickness_mm": 84.0,
+      "function": "Nosná a ztužující obvodová stěna; vnitřní krycí vrstva současně vytváří přiznaný pohledový povrch. Projektově určené vývrty s chráničkami a vývrty pro krabice vytvářejí přípravu elektroinstalace přímo v masivním panelu.",
+      "lamellae": [
+        {
+          "id": "L01-A",
+          "name": "Vnitřní krycí lamela – pohledová",
+          "thickness_mm": 28.0,
+          "grain_direction": "vertical_z",
+          "surface_quality": "VI",
+          "material_id": "clt_spruce_visual",
+          "exploded_group": 0
+        },
+        {
+          "id": "L01-B",
+          "name": "Střední příčná lamela",
+          "thickness_mm": 28.0,
+          "grain_direction": "horizontal_x",
+          "surface_quality": "NVI",
+          "material_id": "clt_spruce_transverse",
+          "exploded_group": 1
+        },
+        {
+          "id": "L01-C",
+          "name": "Vnější krycí lamela – nepohledová",
+          "thickness_mm": 28.0,
+          "grain_direction": "vertical_z",
+          "surface_quality": "NVI",
+          "material_id": "clt_spruce_nonvisual",
+          "exploded_group": 2
+        }
+      ]
+    }
+  ],
+  "features": [
+    {
+      "id": "EP01",
+      "type": "electrical_preparation",
+      "included": true,
+      "mounting_cavity_present": false,
+      "scope_basis": "schválená výrobní dokumentace, elektroprojekt, statické posouzení a CNC výrobní data",
+      "host_layer_ids": [
+        "L01"
+      ],
+      "included_items": [
+        "projektově určené vývrty přímo v masivním CLT panelu",
+        "elektroinstalační chráničky vložené do vývrtů pro vedení elektroinstalace",
+        "vývrty pro následnou montáž elektroinstalačních krabic"
+      ],
+      "excluded_items": [
+        "elektroinstalační krabice",
+        "kabeláž",
+        "zásuvky, vypínače a další koncové přístroje",
+        "zapojení",
+        "revize elektroinstalace"
+      ],
+      "user_heading": "Elektroinstalační příprava je součástí CLT panelu",
+      "user_description": "Panel nemá montážní předstěnu. Elektroinstalační trasy jsou proto připraveny přímo v masivním CLT jako projektově určené vývrty osazené chráničkami. Součástí dodávky jsou rovněž vývrty pro následnou montáž elektroinstalačních krabic.",
+      "preview_note": "Referenční 3D výřez zobrazuje dvě vzorové svislé trasy s chráničkami Ø 20 mm. Vývrty pro krabice se v obecném výřezu nezobrazují; jejich počet a poloha se řídí konkrétním elektroprojektem.",
+      "preview": {
+        "purpose": "Reprezentativní geometrie dvou svislých tras s chráničkami pro jednotný náhled konfigurátoru. Finální počet, průměr a poloha tras i vývrtů pro elektroinstalační krabice se řídí elektroprojektem, statickým posouzením a CNC výrobními daty.",
+        "axis": "z",
+        "diameter_mm": 20.0,
+        "through_height": true,
+        "conduit_included": true,
+        "box_mounting_bores_previewed": false,
+        "bores": [
+          {
+            "id": "E01",
+            "center_x_mm": 220.0,
+            "center_y_mm": 42.0
+          },
+          {
+            "id": "E02",
+            "center_x_mm": 405.0,
+            "center_y_mm": 42.0
+          }
+        ]
+      },
+      "interaction": {
+        "hover_target_layer_ids": [
+          "L01"
+        ],
+        "on_select": "show_feature_description"
+      }
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "panel_id": "1.4",
+  "standard_id": "PREFA_SOPIK_RENDER_STD_01",
+  "status": "PASS",
+  "declared_total_thickness_mm": 84.0,
+  "calculated_total_thickness_mm": 84.0,
+  "logical_layer_count": 1,
+  "geometry_object_count": 5,
+  "geometry_sha256": "ee19a200caf63afe0cd19b78b602535b5899e5a635688d1df9890771d2e220e6",
+  "checks": {
+    "declared_equals_geometry": true,
+    "declared_equals_additive_sum": true,
+    "single_clt_logical_layer": true,
+    "three_lamellae_28_28_28": true,
+    "cross_laminated_orientation": true,
+    "one_side_visual": true,
+    "continuous_visual_face_without_seams": true,
+    "two_preview_bores_diameter_20": true,
+    "bores_fully_inside_core_lamella": true,
+    "preview_conduits_included": true,
+    "electrical_preparation_without_mounting_cavity": true,
+    "box_mounting_bores_included": true,
+    "boxes_and_wiring_excluded": true,
+    "box_bores_not_falsely_previewed": true,
+    "no_insulation_or_facade_layers": true
+  },
+  "layer_ranges_mm": {
+    "L01": [
+      0.0,
+      84.0
+    ]
+  }
+}

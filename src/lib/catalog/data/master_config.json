@@ -1,0 +1,574 @@
+{
+  "products": [
+    {
+      "id": "wall-panel-1-1",
+      "code": "1.1",
+      "legacyCode": "OS_VF_01",
+      "name": "Obvodový panel s kontaktním zateplením a armovací vrstvou",
+      "subtitle": "Difuzně otevřená skladba s minerálním kontaktním zateplením 100 mm a vyztuženou armovací vrstvou.",
+      "category": "WALL_OUTER",
+      "declaredThicknessMm": 341.0,
+      "unitPriceExVat": 8500.0,
+      "isRecommended": true,
+      "surcharges": {
+        "acousticsSurchargePct": 8.0,
+        "fireResistanceSurchargePct": 10.0,
+        "oversizedOpeningsSurchargePct": 12.0,
+        "largeSpanSurchargePct": 0.0
+      },
+      "technicalParameters": {
+        "uValue": 0.14,
+        "rwDb": 52,
+        "fireResistance": "REI 60 / DP1",
+        "massKgM2": 78.5
+      },
+      "electricalPreparation": {
+        "included": true,
+        "responsibility": "supplier",
+        "heading": "Příprava pro elektroinstalaci je součástí panelu",
+        "description": "Panel obsahuje 40mm instalační předstěnu. V rozsahu schválené výrobní dokumentace jsou připraveny elektroinstalační chráničky (husí krky) a vývrty pro následné osazení elektroinstalačních krabic. Vedení je připraveno před parotěsnou rovinou, takže při dokončení elektroinstalace není nutné zasahovat do nosné konstrukce ani porušovat parozábranu.",
+        "includedItems": [
+          "Elektroinstalační chráničky (husí krky)",
+          "Vývrty pro následné osazení elektroinstalačních krabic ve 40mm předstěně"
+        ],
+        "excludedItems": [
+          "Elektroinstalační krabice",
+          "Kabeláž",
+          "Zásuvky, vypínače a další koncové přístroje",
+          "Zapojení a kompletace",
+          "Výchozí revize elektroinstalace"
+        ]
+      },
+      "deliveryScope": {
+        "included": [
+          "Nosný rám KVH 60/160 mm s minerální izolací 160 mm",
+          "Vnitřní oboustranné ztužující opláštění deskami Fermacell 12,5 mm",
+          "Parotěsná rovina před nosnou konstrukcí",
+          "Instalační předstěna 40 mm s minerální izolací",
+          "Minerální fasádní zateplení 100 mm s podélnou orientací vláken",
+          "Základní armovací stěrka 3 mm s výztužnou sklotextilní mřížkou (perlinkou)"
+        ],
+        "excluded": [
+          "Finální tmelení, stěrkování, penetrace a interiérová malba",
+          "Penetrace a finální silikonová fasádní omítka"
+        ],
+        "clientSupplied": [
+          "Finální interiérové povrchové úpravy (tmelení Q2/Q3, výmalba)",
+          "Fasádní penetrace a finální omítka na armovací vrstvu"
+        ],
+        "deliveryNote": "Součástí dodaného panelu nejsou finální povrchové úpravy na straně interiéru ani exteriéru. Interiér končí deskou Fermacell bez finálního tmelení, stěrkování, penetrace a malby. Exteriér končí armovací stěrkou s perlinkou bez penetrace a finální fasádní omítky."
+      },
+      "images": {
+        "assembledCutawayWebp": "/panels/catalog/1_1/panel_1_1_photoreal_assembled_cutaway.webp",
+        "explodedWebp": "/panels/catalog/1_1/panel_1_1_photoreal_exploded.webp",
+        "fullWebp": "/panels/catalog/1_1/panel_1_1_photoreal_full.webp",
+        "thumbnailWebp": "/panels/catalog/1_1/panel_1_1_thumb.webp"
+      },
+      "layers": [
+        { "id": "L01", "order": 1, "name": "Sádrovláknitá deska Fermacell 12,5 mm", "materialId": "fermacell_raw", "geometry": "solid", "thicknessMm": 12.5, "additiveToTotal": true, "function": "Vnitřní opláštění a podklad pro finální povrchovou úpravu na stavbě." },
+        { "id": "L02", "order": 2, "name": "Instalační předstěna z latí 60/40 mm", "materialId": "kvh_spruce", "geometry": "frame", "thicknessMm": 40.0, "additiveToTotal": true, "function": "Instalační prostor tloušťky 40 mm pro vedení rozvodů před parotěsnou rovinou." },
+        { "id": "L03", "order": 3, "name": "Minerální izolace v instalační předstěně", "materialId": "mineral_wool_soft", "geometry": "hosted_infill", "thicknessMm": 40.0, "additiveToTotal": false, "function": "Vyplnění instalační dutiny pro zlepšení tepelných a akustických vlastností." },
+        { "id": "L04", "order": 4, "name": "Sádrovláknitá deska Fermacell 12,5 mm", "materialId": "fermacell_raw", "geometry": "solid", "thicknessMm": 12.5, "additiveToTotal": true, "function": "Ztužující opláštění před nosnou konstrukcí a podklad parotěsné roviny." },
+        { "id": "L05", "order": 5, "name": "Parozábrana", "materialId": "vapour_membrane", "geometry": "solid", "thicknessMm": 0.5, "additiveToTotal": true, "function": "Omezení průniku vodní páry z interiéru do nosné části panelu." },
+        { "id": "L06", "order": 6, "name": "Nosný rám KVH 60/160 mm", "materialId": "kvh_spruce", "geometry": "frame", "thicknessMm": 160.0, "additiveToTotal": true, "function": "Hlavní nosná dřevěná konstrukce obvodového panelu." },
+        { "id": "L07", "order": 7, "name": "Minerální izolace v nosném rámu", "materialId": "mineral_wool_soft", "geometry": "hosted_infill", "thicknessMm": 160.0, "additiveToTotal": false, "function": "Hlavní tepelněizolační výplň mezi sloupky nosného rámu." },
+        { "id": "L08", "order": 8, "name": "Sádrovláknitá deska Fermacell 12,5 mm", "materialId": "fermacell_raw", "geometry": "solid", "thicknessMm": 12.5, "additiveToTotal": true, "function": "Vnější ztužující opláštění nosného rámu a podklad kontaktního zateplení." },
+        { "id": "L09", "order": 9, "name": "Minerální fasádní tepelná izolace 100 mm", "materialId": "mineral_wool_facade", "geometry": "solid", "thicknessMm": 100.0, "additiveToTotal": true, "function": "Kontaktní zateplení omezující tepelné mosty rámové konstrukce." },
+        { "id": "L10", "order": 10, "name": "Armovací stěrka s perlinkou 3 mm", "materialId": "reinforced_basecoat", "geometry": "solid", "thicknessMm": 3.0, "additiveToTotal": true, "function": "Základní vyztužená vrstva fasádního systému bez finální omítky." }
+      ]
+    },
+    {
+      "id": "wall-panel-1-2",
+      "code": "1.2",
+      "legacyCode": "OS_VF_02",
+      "name": "Obvodový panel s přípravou pro provětrávanou dřevěnou fasádu",
+      "subtitle": "Masivnější nosný rám 240 mm, difuzní fasádní membrána a dvojitý dřevěný podkladní rošt.",
+      "category": "WALL_OUTER",
+      "declaredThicknessMm": 398.5,
+      "unitPriceExVat": 10238.0,
+      "isRecommended": false,
+      "surcharges": {
+        "acousticsSurchargePct": 8.0,
+        "fireResistanceSurchargePct": 10.0,
+        "oversizedOpeningsSurchargePct": 12.0,
+        "largeSpanSurchargePct": 0.0
+      },
+      "technicalParameters": {
+        "uValue": 0.13,
+        "rwDb": 54,
+        "fireResistance": "REI 60 / DP1",
+        "massKgM2": 82.0
+      },
+      "electricalPreparation": {
+        "included": true,
+        "responsibility": "supplier",
+        "heading": "Příprava pro elektroinstalaci je součástí panelu",
+        "description": "Panel obsahuje 40mm instalační předstěnu. V rozsahu schválené výrobní dokumentace jsou připraveny elektroinstalační chráničky (husí krky) a vývrty pro následné osazení elektroinstalačních krabic. Vedení je připraveno před parotěsnou rovinou, takže při dokončení elektroinstalace není nutné zasahovat do nosné konstrukce ani porušovat parozábranu.",
+        "includedItems": [
+          "Elektroinstalační chráničky (husí krky)",
+          "Vývrty pro následné osazení elektroinstalačních krabic ve 40mm předstěně"
+        ],
+        "excludedItems": [
+          "Elektroinstalační krabice",
+          "Kabeláž",
+          "Zásuvky, vypínače a koncové přístroje",
+          "Zapojení a kompletace",
+          "Výchozí revize elektroinstalace"
+        ]
+      },
+      "deliveryScope": {
+        "included": [
+          "Nosný rám KVH 60/240 mm s minerální izolací 240 mm",
+          "Instalační předstěna 40 mm s minerální izolací",
+          "Parotěsná rovina před nosnou konstrukcí",
+          "Vnější opláštění deskami Fermacell 12,5 mm",
+          "Difuzně otevřená větrotěsná fasádní membrána",
+          "Svislý podkladní rošt 60/40 mm (provětrávaná mezera)",
+          "Vodorovný podkladní rošt 60/40 mm pro montáž fasádních prken"
+        ],
+        "excluded": [
+          "Fasádní dřevěná prkna (např. modřín, smrk, thermo-dřevo)",
+          "Spojovací nerezový materiál pro fasádní prkna",
+          "Finální tmelení a nátěry interiéru"
+        ],
+        "clientSupplied": [
+          "Dřevěný fasádní obklad a jeho montáž na připravený dvojitý rošt",
+          "Finální interiérové povrchové úpravy"
+        ],
+        "deliveryNote": "Součástí dodaného panelu nejsou finální pohledové úpravy na straně interiéru ani exteriéru. Interiér končí surovou deskou Fermacell bez finálního tmelení, stěrkování, penetrace a malby. Exteriér končí dvojitým podkladním roštem pro provětrávanou fasádu; fasádní prkna ani jejich finální povrchová úprava nejsou součástí dodávky."
+      },
+      "images": {
+        "assembledCutawayWebp": "/panels/catalog/1_2/panel_1_2_photoreal_assembled_cutaway.webp",
+        "explodedWebp": "/panels/catalog/1_2/panel_1_2_photoreal_exploded.webp",
+        "fullWebp": "/panels/catalog/1_2/panel_1_2_photoreal_full.webp",
+        "thumbnailWebp": "/panels/catalog/1_2/panel_1_2_thumb.webp"
+      },
+      "layers": [
+        { "id": "L01", "order": 1, "name": "Sádrovláknitá deska Fermacell 12,5 mm", "materialId": "fermacell_raw", "geometry": "solid", "thicknessMm": 12.5, "additiveToTotal": true, "function": "Vnitřní opláštění a podklad pro finální pohledovou úpravu." },
+        { "id": "L02", "order": 2, "name": "Instalační předstěna z latí 60/40 mm", "materialId": "kvh_spruce", "geometry": "frame", "thicknessMm": 40.0, "additiveToTotal": true, "function": "Instalační prostor pro vedení rozvodů před parotěsnou rovinou." },
+        { "id": "L03", "order": 3, "name": "Minerální izolace v instalační předstěně", "materialId": "mineral_wool_soft", "geometry": "hosted_infill", "thicknessMm": 40.0, "additiveToTotal": false, "function": "Vyplnění instalační dutiny pro zlepšení tepelných a akustických vlastností." },
+        { "id": "L04", "order": 4, "name": "Sádrovláknitá deska Fermacell 12,5 mm", "materialId": "fermacell_raw", "geometry": "solid", "thicknessMm": 12.5, "additiveToTotal": true, "function": "Ztužující opláštění před nosnou konstrukcí a podklad parotěsné roviny." },
+        { "id": "L05", "order": 5, "name": "Parozábrana", "materialId": "vapour_membrane", "geometry": "solid", "thicknessMm": 0.5, "additiveToTotal": true, "function": "Omezení průniku vodní páry z interiéru do nosné části panelu." },
+        { "id": "L06", "order": 6, "name": "Nosný rám KVH 60/240 mm", "materialId": "kvh_spruce", "geometry": "frame", "thicknessMm": 240.0, "additiveToTotal": true, "function": "Hlavní nosná dřevěná konstrukce obvodového panelu." },
+        { "id": "L07", "order": 7, "name": "Minerální izolace v nosném rámu", "materialId": "mineral_wool_soft", "geometry": "hosted_infill", "thicknessMm": 240.0, "additiveToTotal": false, "function": "Hlavní tepelněizolační výplň mezi sloupky nosného rámu." },
+        { "id": "L08", "order": 8, "name": "Sádrovláknitá deska Fermacell 12,5 mm", "materialId": "fermacell_raw", "geometry": "solid", "thicknessMm": 12.5, "additiveToTotal": true, "function": "Vnější ztužující opláštění nosného rámu a podklad difuzní membrány." },
+        { "id": "L09", "order": 9, "name": "Difuzně otevřená fasádní membrána", "materialId": "diffusion_membrane", "geometry": "solid", "thicknessMm": 0.5, "additiveToTotal": true, "function": "Větrotěsná a vodoodpudivá ochrana vnějšího opláštění." },
+        { "id": "L10", "order": 10, "name": "Svislý podkladní rošt 60/40 mm", "materialId": "kvh_spruce", "geometry": "frame", "thicknessMm": 40.0, "additiveToTotal": true, "function": "První rovina podkladního roštu a vymezení provětrávané mezery." },
+        { "id": "L11", "order": 11, "name": "Vodorovný podkladní rošt 60/40 mm", "materialId": "kvh_spruce", "geometry": "frame", "thicknessMm": 40.0, "additiveToTotal": true, "function": "Druhá rovina podkladního roštu pro přímou montáž fasádního obkladu." }
+      ]
+    },
+    {
+      "id": "wall-panel-1-3",
+      "code": "1.3",
+      "legacyCode": "OS_VF_03",
+      "name": "Ekonomický základní panel s otevřenou předstěnou",
+      "subtitle": "Základní nosná konstrukce s otevřeným roštem předstěny; dokončení elektro, izolace a fasády zajišťuje klient.",
+      "category": "WALL_OUTER",
+      "declaredThicknessMm": 225.5,
+      "unitPriceExVat": 6450.0,
+      "isRecommended": false,
+      "surcharges": {
+        "acousticsSurchargePct": 8.0,
+        "fireResistanceSurchargePct": 10.0,
+        "oversizedOpeningsSurchargePct": 12.0,
+        "largeSpanSurchargePct": 0.0
+      },
+      "technicalParameters": {
+        "uValue": 0.22,
+        "rwDb": 48,
+        "fireResistance": "REI 45 / DP1",
+        "massKgM2": 52.0
+      },
+      "electricalPreparation": {
+        "included": false,
+        "responsibility": "client",
+        "heading": "Elektro-přípravu a dokončení předstěny zajišťuje klient",
+        "description": "Součástí dodávky je pouze otevřený dřevěný rošt instalační předstěny tloušťky 40 mm. Klient si zcela zajišťuje přípravu pro elektroinstalaci, vložení minerální izolace do předstěny a její vnitřní zaklopení deskou Fermacell včetně finální povrchové úpravy.",
+        "includedItems": [],
+        "excludedItems": [
+          "Elektroinstalační chráničky a vývrty",
+          "Elektroinstalační krabice",
+          "Kabeláž a koncové přístroje",
+          "Minerální izolace do instalační předstěny",
+          "Vnitřní záklop deskou Fermacell 12,5 mm",
+          "Kontaktní zateplení a fasádní systém"
+        ]
+      },
+      "deliveryScope": {
+        "included": [
+          "Otevřený dřevěný rošt instalační předstěny 60/40 mm",
+          "Sádrovláknitá deska Fermacell 12,5 mm před nosnou konstrukcí",
+          "Parotěsná zábrana",
+          "Nosný rám KVH 60/160 mm s minerální izolací 160 mm",
+          "Vnější ztužující záklop deskou Fermacell 12,5 mm"
+        ],
+        "excluded": [
+          "Příprava elektroinstalace v předstěně",
+          "Izolace instalační předstěny",
+          "Vnitřní deska Fermacell",
+          "Fasádní zateplení a fasádní omítka"
+        ],
+        "clientSupplied": [
+          "Veškeré rozvody elektroinstalace, chráničky a krabice",
+          "Vložení minerální izolace do 40mm předstěny",
+          "Montáž vnitřní desky Fermacell a její povrchová úprava",
+          "Vnější kontaktní zateplení nebo provětrávaná fasáda"
+        ],
+        "deliveryNote": "Ekonomická varianta se na straně interiéru dodává s otevřeným 40mm roštem instalační předstěny. Minerální izolace této předstěny, vnitřní zaklopení deskou Fermacell a veškerá příprava pro elektroinstalaci nejsou součástí dodávky a zcela je zajišťuje klient. Exteriér končí surovou deskou Fermacell; kontaktní tepelná izolace, fasádní systém ani finální fasáda nejsou součástí dodávky."
+      },
+      "images": {
+        "assembledCutawayWebp": "/panels/catalog/1_3/panel_1_3_photoreal_assembled_cutaway.webp",
+        "explodedWebp": "/panels/catalog/1_3/panel_1_3_photoreal_exploded.webp",
+        "fullWebp": "/panels/catalog/1_3/panel_1_3_photoreal_full.webp",
+        "thumbnailWebp": "/panels/catalog/1_3/panel_1_3_thumb.webp"
+      },
+      "layers": [
+        { "id": "L01", "order": 1, "name": "Instalační předstěna z latí 60/40 mm (otevřený rošt)", "materialId": "kvh_spruce", "geometry": "frame", "thicknessMm": 40.0, "additiveToTotal": true, "function": "Dodávaný otevřený dřevěný rošt. Elektro-přípravu, izolaci a záklop zajišťuje klient." },
+        { "id": "L02", "order": 2, "name": "Sádrovláknitá deska Fermacell 12,5 mm", "materialId": "fermacell_raw", "geometry": "solid", "thicknessMm": 12.5, "additiveToTotal": true, "function": "Ztužující opláštění před nosnou konstrukcí a podklad parotěsné roviny." },
+        { "id": "L03", "order": 3, "name": "Parozábrana", "materialId": "vapour_membrane", "geometry": "solid", "thicknessMm": 0.5, "additiveToTotal": true, "function": "Omezení průniku vodní páry z interiéru do nosné části panelu." },
+        { "id": "L04", "order": 4, "name": "Nosný rám KVH 60/160 mm", "materialId": "kvh_spruce", "geometry": "frame", "thicknessMm": 160.0, "additiveToTotal": true, "function": "Hlavní nosná dřevěná konstrukce obvodového panelu." },
+        { "id": "L05", "order": 5, "name": "Minerální izolace v nosném rámu", "materialId": "mineral_wool_soft", "geometry": "hosted_infill", "thicknessMm": 160.0, "additiveToTotal": false, "function": "Hlavní tepelněizolační výplň mezi sloupky nosného rámu." },
+        { "id": "L06", "order": 6, "name": "Sádrovláknitá deska Fermacell 12,5 mm", "materialId": "fermacell_raw", "geometry": "solid", "thicknessMm": 12.5, "additiveToTotal": true, "function": "Vnější ztužující opláštění a dodávaný vnější povrch panelu bez fasády." }
+      ]
+    },
+    {
+      "id": "wall-panel-1-4",
+      "code": "1.4",
+      "name": "CLT masivní panel 84 mm, jednostranně pohledový",
+      "subtitle": "Třívrstvý křížem lepený masivní dřevěný panel s vyfrézovanými elektro-trasami přímo v těle masivu.",
+      "category": "WALL_OUTER",
+      "declaredThicknessMm": 84.0,
+      "unitPriceExVat": 9200.0,
+      "isRecommended": false,
+      "surcharges": {
+        "acousticsSurchargePct": 10.0,
+        "fireResistanceSurchargePct": 12.0,
+        "oversizedOpeningsSurchargePct": 15.0,
+        "largeSpanSurchargePct": 0.0
+      },
+      "technicalParameters": {
+        "uValue": 1.15,
+        "rwDb": 34,
+        "fireResistance": "REI 60 / DP1",
+        "massKgM2": 41.2
+      },
+      "electricalPreparation": {
+        "included": true,
+        "responsibility": "supplier",
+        "heading": "Elektroinstalační příprava je vyfrézována v CLT panelu",
+        "description": "Panel nemá montážní předstěnu. Elektroinstalační trasy jsou proto připraveny přímo v masivním CLT jako projektově určené vývrty osazené chráničkami. Součástí dodávky jsou rovněž vývrty pro následnou montáž elektroinstalačních krabic.",
+        "includedItems": [
+          "Projektově určené CNC vývrty přímo v masivním CLT panelu",
+          "Elektroinstalační chráničky vložené do vývrtů pro vedení kabeláže",
+          "Vývrty pro následnou montáž elektroinstalačních krabic"
+        ],
+        "excludedItems": [
+          "Elektroinstalační krabice",
+          "Kabeláž",
+          "Koncové přístroje (zásuvky, vypínače)",
+          "Zapojení a revize"
+        ]
+      },
+      "deliveryScope": {
+        "included": [
+          "Masivní třívrstvý CLT panel tloušťky 84 mm (lamely 28/28/28 mm)",
+          "Interiérová strana v pohledové kvalitě (VI) – celistvá plocha bez viditelných spár",
+          "Projektově připravené svislé elektro-trasy s chráničkami a vývrty pro krabice",
+          "Exteriérová strana v nepohledové kvalitě (NVI)"
+        ],
+        "excluded": [
+          "Dodatečný interiérový nátěr nebo lazura (není-li sjednáno)",
+          "Vnější tepelná izolace, větrotěsná vrstva a fasádní obklad"
+        ],
+        "clientSupplied": [
+          "Vnější obálka stavby (zateplení, rošt, fasáda)",
+          "Dokončení elektroinstalace (kabely, přístroje)"
+        ],
+        "deliveryNote": "Dodávku tvoří samotný masivní CLT panel tloušťky 84 mm s projektově připravenými elektroinstalačními vývrty osazenými chráničkami pro vedení elektroinstalace a s vývrty pro následnou montáž elektroinstalačních krabic. Interiérová strana je dodávána v pohledové kvalitě. Exteriérová strana je nepohledová a určená pro následné doplnění obálky stavby."
+      },
+      "images": {
+        "assembledCutawayWebp": "/panels/catalog/1_4/panel_1_4_photoreal_assembled_cutaway.webp",
+        "explodedWebp": "/panels/catalog/1_4/panel_1_4_photoreal_exploded.webp",
+        "fullWebp": "/panels/catalog/1_4/panel_1_4_photoreal_full.webp",
+        "thumbnailWebp": "/panels/catalog/1_4/panel_1_4_thumb.webp"
+      },
+      "layers": [
+        {
+          "id": "L01",
+          "order": 1,
+          "name": "Masivní třívrstvý CLT panel 84 mm",
+          "materialId": "clt_spruce_visual",
+          "geometry": "clt_panel",
+          "thicknessMm": 84.0,
+          "additiveToTotal": true,
+          "function": "Nosná a ztužující obvodová stěna; vnitřní krycí vrstva současně vytváří přiznaný pohledový povrch. Projektově určené vývrty s chráničkami a vývrty pro krabice vytvářejí přípravu elektroinstalace přímo v masivním panelu."
+        }
+      ]
+    },
+    {
+      "id": "wall-panel-2-1",
+      "code": "NS_VF_01",
+      "name": "Vnitřní nosná stěna 170 mm",
+      "subtitle": "Vnitřní nosný panel Skladba 2.1 s vysokou únosností a akustickou izolací mezi místnostmi.",
+      "category": "WALL_INNER",
+      "declaredThicknessMm": 170.0,
+      "unitPriceExVat": 3500.0,
+      "isRecommended": true,
+      "surcharges": {
+        "acousticsSurchargePct": 10.0,
+        "fireResistanceSurchargePct": 10.0,
+        "oversizedOpeningsSurchargePct": 10.0,
+        "largeSpanSurchargePct": 0.0
+      },
+      "technicalParameters": {
+        "rwDb": 46,
+        "fireResistance": "REI 60 / DP1",
+        "massKgM2": 45.0
+      },
+      "electricalPreparation": {
+        "included": true,
+        "responsibility": "supplier",
+        "heading": "Elektro-příprava ve vnitřním panelu",
+        "description": "V nosném rámu jsou připraveny svislé chráničky a vývrty pro krabice.",
+        "includedItems": ["Chráničky v nosném rámu", "Vývrty pro elektro krabice"],
+        "excludedItems": ["Kabeláž", "Krabice", "Zapojení"]
+      },
+      "deliveryScope": {
+        "included": ["KVH rám 60/120 mm s minerální izolací 120 mm", "Oboustranný záklop Fermacell 2×15 mm"],
+        "excluded": ["Finální tmelení a výmalba"],
+        "clientSupplied": ["Finální interiérové povrchové úpravy"],
+        "deliveryNote": "Dodávka končí sádrovláknitou deskou bez finálního tmelení."
+      },
+      "images": {
+        "assembledCutawayWebp": "/panels/NS_VF_01_3D.jpg",
+        "explodedWebp": "/panels/NS_VF_01_3D.jpg",
+        "fullWebp": "/panels/NS_VF_01_3D.jpg"
+      },
+      "layers": [
+        { "id": "L01", "order": 1, "name": "Fermacell 15 mm", "materialId": "fermacell_raw", "geometry": "solid", "thicknessMm": 15.0, "additiveToTotal": true, "function": "Vnitřní opláštění." },
+        { "id": "L02", "order": 2, "name": "Nosný rám KVH 60/120 mm s minerální izolací", "materialId": "kvh_spruce", "geometry": "frame", "thicknessMm": 120.0, "additiveToTotal": true, "function": "Nosná akustická konstrukce." },
+        { "id": "L03", "order": 3, "name": "Fermacell 15 mm", "materialId": "fermacell_raw", "geometry": "solid", "thicknessMm": 15.0, "additiveToTotal": true, "function": "Vnitřní opláštění." }
+      ]
+    },
+    {
+      "id": "ceiling-panel-3-1",
+      "code": "STROP_RD",
+      "name": "Stropní panel RD",
+      "subtitle": "Dřevěný trámový strop s akustickým útlumem pro rodinné domy (tl. 432 mm).",
+      "category": "CEILING",
+      "declaredThicknessMm": 432.0,
+      "unitPriceExVat": 3800.0,
+      "isRecommended": true,
+      "surcharges": {
+        "acousticsSurchargePct": 8.0,
+        "fireResistanceSurchargePct": 8.0,
+        "oversizedOpeningsSurchargePct": 10.0,
+        "largeSpanSurchargePct": 18.0
+      },
+      "technicalParameters": {
+        "rwDb": 56,
+        "fireResistance": "REI 45 / DP1",
+        "massKgM2": 65.0
+      },
+      "electricalPreparation": {
+        "included": true,
+        "responsibility": "supplier",
+        "heading": "Příprava pro stropní svítidla a rozvody",
+        "description": "Prostupy v nosných prvcích pro elektro a VZT trasy.",
+        "includedItems": ["Chráničky pro stropní svítidla"],
+        "excludedItems": ["Svítidla", "Zapojení"]
+      },
+      "deliveryScope": {
+        "included": ["Stropní nosníky KVH / BSH", "Kročejová a akustická izolace", "Záklop OSB 22 mm"],
+        "excluded": ["Finální nášlapná vrstva podlahy", "Podhledové SDK"],
+        "clientSupplied": ["Finální podlaha a podhled"],
+        "deliveryNote": "Dodávka tvoří nosnou stropní konstrukci se záklopem."
+      },
+      "images": {
+        "assembledCutawayWebp": "/panels/NS_VF_01_3D.jpg",
+        "explodedWebp": "/panels/NS_VF_01_3D.jpg",
+        "fullWebp": "/panels/NS_VF_01_3D.jpg"
+      },
+      "layers": [
+        { "id": "L01", "order": 1, "name": "OSB 4 pero-drážka 22 mm", "materialId": "fermacell_raw", "geometry": "solid", "thicknessMm": 22.0, "additiveToTotal": true, "function": "Roznášecí vrstva podlahy." },
+        { "id": "L02", "order": 2, "name": "Stropní trámy KVH 80/240 mm s minerální izolací", "materialId": "kvh_spruce", "geometry": "frame", "thicknessMm": 240.0, "additiveToTotal": true, "function": "Hlavní nosná stropní konstrukce." }
+      ]
+    },
+    {
+      "id": "roof-panel-4-1",
+      "code": "STRECHA_SIKMA",
+      "name": "Střešní panel pro šikmou střechu",
+      "subtitle": "Difuzně otevřený střešní dílec s nadkrokevní i mezikrokevní izolací (U = 0,11 W/m²K).",
+      "category": "ROOF",
+      "declaredThicknessMm": 455.0,
+      "unitPriceExVat": 4500.0,
+      "isRecommended": true,
+      "surcharges": {
+        "acousticsSurchargePct": 8.0,
+        "fireResistanceSurchargePct": 8.0,
+        "oversizedOpeningsSurchargePct": 12.0,
+        "largeSpanSurchargePct": 15.0
+      },
+      "technicalParameters": {
+        "uValue": 0.11,
+        "fireResistance": "REI 30 / DP1",
+        "massKgM2": 58.0
+      },
+      "electricalPreparation": {
+        "included": true,
+        "responsibility": "supplier",
+        "heading": "Příprava pro střešní okna a prostupy",
+        "description": "Prefabrikované lemování a výměny pro střešní okna a fotovoltaiku.",
+        "includedItems": ["Výměny pro střešní okna", "Chránička pro solární kabely"],
+        "excludedItems": ["Fotovoltaika", "Střešní krytina"]
+      },
+      "deliveryScope": {
+        "included": ["Krokve KVH 80/240 mm", "Minerální a dřevovláknitá izolace", "Difuzní střešní fólie", "Kontralatě"],
+        "excluded": ["Finální střešní krytina a klempířské prvky"],
+        "clientSupplied": ["Pokládka střešní krytiny a oplechování"],
+        "deliveryNote": "Dodávka končí kontralatěmi připravenými pro laťování krytiny."
+      },
+      "images": {
+        "assembledCutawayWebp": "/panels/NS_VF_01_3D.jpg",
+        "explodedWebp": "/panels/NS_VF_01_3D.jpg",
+        "fullWebp": "/panels/NS_VF_01_3D.jpg"
+      },
+      "layers": [
+        { "id": "L01", "order": 1, "name": "Krokve KVH 80/240 mm s minerální izolací", "materialId": "kvh_spruce", "geometry": "frame", "thicknessMm": 240.0, "additiveToTotal": true, "function": "Nosná střešní konstrukce." },
+        { "id": "L02", "order": 2, "name": "Dřevovláknitá deska 60 mm", "materialId": "mineral_wool_facade", "geometry": "solid", "thicknessMm": 60.0, "additiveToTotal": true, "function": "Přerušení tepelných mostů." }
+      ]
+    }
+  ],
+  "stepUiTexts": {
+    "step1": {
+      "title": "Nastavení projektu",
+      "heading": "Váš cíl",
+      "subheading": "Nejprve společně nastavíme termín, místo a rozsah domu.",
+      "supportTitle": "Dobrý den, provedu vás cenovou kalkulací vaší stavby.",
+      "supportText": "Zvolte datum, ke kterému bychom Vám měli dokončenou hrubou stavbu předat. Ještě v tomto kroku tak uvidíte, kdy dům půjde do výroby, abychom Váš termín dodrželi.",
+      "locationHelp": "Doplňte pouze obec nebo poštovní směrovací číslo."
+    },
+    "step2": {
+      "title": "Vnější stěny 1. NP",
+      "catalogHeading": "Panel pro aktuální krok",
+      "catalogDescription": "Vyberte certifikovanou konstrukci pro obvodové stěny 1NP.",
+      "infoBoxTitle": "Informace o vnějších stěnách",
+      "infoBullets": [
+        "Výška stěn: Konstrukční výška stěnových panelů PREFA je 2,8 m (započteno v kalkulaci).",
+        "Okna a otvory: Kalkulace již uvažuje s přípravou standardních stavebních otvorů pro rodinné domy.",
+        "Kalkulační plocha: Výměra je počítána ze 100 % hrubé plochy panelů (cena za m² již uvažuje se \"ztratným\" na otvory).",
+        "Nadrozměrné otvory: Otvory nad 10 m² (velká okna/portály) vyžadují posouzení statikem a jsou započteny do technické rezervy.",
+        "Požární odolnost a akustika: Příplatky za zvýšenou požární a akustickou odolnost jsou zahrnuty v technické rezervě."
+      ]
+    },
+    "step3": {
+      "title": "Vnitřní stěny 1. NP",
+      "catalogHeading": "Vnitřní příčky a nosné stěny",
+      "catalogDescription": "Vyberte nosné a mezipokojové stěny pro 1. NP.",
+      "infoBoxTitle": "Informace o vnitřních stěnách",
+      "infoBullets": [
+        "Vnitřní nosné stěny: Slouží pro přenos zatížení ze stropní konstrukce.",
+        "Akustické mezibytové stěny: Zajišťují vysoký akustický útlum Rw = 62 dB.",
+        "Nenosné dělící příčky: Lehké dřevěné konstrukce s minerální akustickou výplní."
+      ]
+    },
+    "step4": {
+      "title": "Stropní konstrukce",
+      "catalogHeading": "Stropní panely",
+      "catalogDescription": "Zvolte konstrukci mezistropu mezi podlažími.",
+      "infoBoxTitle": "Informace o stropech",
+      "infoBullets": [
+        "Trámový strop: Rychlá montáž velkoformátových stropních dílců.",
+        "Kročejový útlum: Skladba obsahuje účinnou akustickou izolaci pro tlumení kročejového hluku."
+      ]
+    },
+    "step7": {
+      "title": "Střešní konstrukce",
+      "catalogHeading": "Střešní panely a plášť",
+      "catalogDescription": "Zvolte konstrukci střechy domu.",
+      "infoBoxTitle": "Informace o střeše",
+      "infoBullets": [
+        "Šikmá i plochá střecha: Prefabrikované dílce se zabudovanou nadkrokevní izolací.",
+        "Příprava na FVE a střešní okna: Zesílené krokve v místech budoucího zatížení."
+      ]
+    }
+  },
+  "budgetRatesAndLogistics": {
+    "factoryLocation": {
+      "city": "Centrum města Bruntál",
+      "address": "Centrum města Bruntál, 792 01 Bruntál",
+      "description": "Výchozí bod pro stanovení ceny za dopravu (Centrum města Bruntál)"
+    },
+    "transport": {
+      "truckCapacityM2": 25,
+      "demurrageHourlyRateCzk": 250,
+      "formulaDescription": "Počet kamionů = Math.ceil(celková plocha panelů m² / 25 m²). Celková cena dopravy = počet kamionů × tarif pásma dle vzdálenosti (km).",
+      "bands": [
+        { "kmFrom": 1, "kmTo": 25, "pricePlachtaExVat": 8000, "pricePlatoExVat": 8000 },
+        { "kmFrom": 26, "kmTo": 50, "pricePlachtaExVat": 9000, "pricePlatoExVat": 9000 },
+        { "kmFrom": 51, "kmTo": 75, "pricePlachtaExVat": 10000, "pricePlatoExVat": 10000 },
+        { "kmFrom": 76, "kmTo": 100, "pricePlachtaExVat": 11000, "pricePlatoExVat": 11000 },
+        { "kmFrom": 101, "kmTo": 125, "pricePlachtaExVat": 11500, "pricePlatoExVat": 12000 },
+        { "kmFrom": 126, "kmTo": 150, "pricePlachtaExVat": 12000, "pricePlatoExVat": 13000 },
+        { "kmFrom": 151, "kmTo": 175, "pricePlachtaExVat": 12500, "pricePlatoExVat": 14000 },
+        { "kmFrom": 176, "kmTo": 200, "pricePlachtaExVat": 13000, "pricePlatoExVat": 15000 },
+        { "kmFrom": 201, "kmTo": 225, "pricePlachtaExVat": 13500, "pricePlatoExVat": 16000 },
+        { "kmFrom": 226, "kmTo": 250, "pricePlachtaExVat": 14000, "pricePlatoExVat": 17000 },
+        { "kmFrom": 251, "kmTo": 275, "pricePlachtaExVat": 14500, "pricePlatoExVat": 18000 },
+        { "kmFrom": 276, "kmTo": 300, "pricePlachtaExVat": 15000, "pricePlatoExVat": 19000 },
+        { "kmFrom": 301, "kmTo": 325, "pricePlachtaExVat": 16000, "pricePlatoExVat": 20000 },
+        { "kmFrom": 326, "kmTo": 350, "pricePlachtaExVat": 17000, "pricePlatoExVat": 21000 },
+        { "kmFrom": 351, "kmTo": 375, "pricePlachtaExVat": 18000, "pricePlatoExVat": 22000 },
+        { "kmFrom": 376, "kmTo": 400, "pricePlachtaExVat": 19000, "pricePlatoExVat": 23000 },
+        { "kmFrom": 401, "kmTo": 425, "pricePlachtaExVat": 20000, "pricePlatoExVat": 24000 },
+        { "kmFrom": 426, "kmTo": 450, "pricePlachtaExVat": 21000, "pricePlatoExVat": 25000 },
+        { "kmFrom": 451, "kmTo": 475, "pricePlachtaExVat": 22000, "pricePlatoExVat": 26000 },
+        { "kmFrom": 476, "kmTo": 500, "pricePlachtaExVat": 23000, "pricePlatoExVat": 27000 },
+        { "kmFrom": 501, "kmTo": 525, "pricePlachtaExVat": 24000, "pricePlatoExVat": 28000 }
+      ]
+    },
+    "craneAndHandling": {
+      "dailyRateCzk": 35000,
+      "description": "Nasazení mobilního autojeřábu s licencovanou obsluhou (35 000 Kč bez DPH / den). Délka stání jeřábu přesně odpovídá délce montáže."
+    },
+    "mountingDuration": {
+      "description": "Délka montáže se stanovuje automaticky podle celkové podlahové plochy stavby (součet ploch podlaží).",
+      "intervals": [
+        { "maxAreaM2": 100, "days": 2, "label": "do 100 m²" },
+        { "maxAreaM2": 150, "days": 3, "label": "100 – 150 m²" },
+        { "maxAreaM2": 200, "days": 4, "label": "150 – 200 m²" },
+        { "maxAreaM2": 9999, "days": 5, "label": "od 200 m²" }
+      ]
+    },
+    "sitePreparationAndScaffolding": {
+      "description": "Zaměření základové desky a zařízení staveniště včetně montáže a demontáže lešení dle podlahové plochy stavby.",
+      "intervals": [
+        { "maxAreaM2": 100, "priceExVat": 55000, "label": "do 100 m²" },
+        { "maxAreaM2": 150, "priceExVat": 75000, "label": "100 – 150 m²" },
+        { "maxAreaM2": 200, "priceExVat": 95000, "label": "150 – 200 m²" },
+        { "maxAreaM2": 9999, "priceExVat": 115000, "label": "od 200 m²" }
+      ]
+    },
+    "professionalAssembly": {
+      "percentageOfPanelsTotal": 14.0,
+      "description": "Odborná montáž certifikovanou četou včetně kompletního spojovacího a kotevního materiálu (% z celkové ceny všech panelů)."
+    },
+    "technicalContingency": {
+      "basePercentageOfPanels": 5.0,
+      "description": "Technická rezerva (% z celkové ceny všech panelů) + dílčí příplatky za akustické stěny, protipožární stěny, stěny s nadrozměrnými otvory a velkorozponové stropy/střechy."
+    },
+    "productionDocumentation": {
+      "percentageOfPanelsTotal": 4.5,
+      "description": "Výrobní 3D dokumentace PREFA ŠOP a koordinace projektové dokumentace s projektantem stavby (% z celkové ceny všech panelů)."
+    },
+    "seasonalDiscounts": [
+      { "code": "2026-10", "label": "Říjen 2026", "discountPct": 5 },
+      { "code": "2026-11", "label": "Listopad 2026", "discountPct": 8 },
+      { "code": "2026-12", "label": "Prosinec 2026", "discountPct": 15 },
+      { "code": "2027-01", "label": "Leden 2027", "discountPct": 15 },
+      { "code": "2027-02", "label": "Únor 2027", "discountPct": 12 },
+      { "code": "2027-03", "label": "Březen 2027", "discountPct": 8 },
+      { "code": "2027-04", "label": "Duben 2027", "discountPct": 0 }
+    ]
+  }
+}

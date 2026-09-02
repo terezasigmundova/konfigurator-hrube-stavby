@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.0",
+  "library_id": "PREFA_SOPIK_MATERIALS_03",
+  "previous_library_id": "PREFA_SOPIK_MATERIALS_02",
+  "extends_library_id": "PREFA_SOPIK_MATERIALS_02",
+  "source_atlas": "assets/material_atlas_v1.png",
+  "clt_source_atlas": "assets/clt_material_atlas_v1.png",
+  "materials": {
+    "fermacell_raw": {
+      "texture": "assets/materials/fermacell_raw.png",
+      "period_u_mm": 625.0,
+      "period_v_mm": 900.0,
+      "opacity": 1.0,
+      "ambient": 0.67,
+      "diffuse": 0.37,
+      "edge_strength": 0.16
+    },
+    "kvh_spruce": {
+      "texture": "assets/materials/kvh_spruce.png",
+      "period_u_mm": 625.0,
+      "period_v_mm": 900.0,
+      "opacity": 1.0,
+      "ambient": 0.62,
+      "diffuse": 0.42,
+      "edge_strength": 0.2
+    },
+    "mineral_wool_soft": {
+      "texture": "assets/materials/mineral_wool_soft.png",
+      "period_u_mm": 625.0,
+      "period_v_mm": 900.0,
+      "opacity": 1.0,
+      "ambient": 0.65,
+      "diffuse": 0.35,
+      "edge_strength": 0.22
+    },
+    "vapour_membrane": {
+      "texture": "assets/materials/vapour_membrane.png",
+      "period_u_mm": 625.0,
+      "period_v_mm": 900.0,
+      "opacity": 0.68,
+      "ambient": 0.76,
+      "diffuse": 0.3,
+      "edge_strength": 0.08
+    },
+    "mineral_wool_facade": {
+      "texture": "assets/materials/mineral_wool_facade.png",
+      "period_u_mm": 625.0,
+      "period_v_mm": 900.0,
+      "opacity": 1.0,
+      "ambient": 0.64,
+      "diffuse": 0.36,
+      "edge_strength": 0.2
+    },
+    "reinforced_basecoat": {
+      "texture": "assets/materials/reinforced_basecoat.png",
+      "period_u_mm": 625.0,
+      "period_v_mm": 900.0,
+      "opacity": 1.0,
+      "ambient": 0.66,
+      "diffuse": 0.34,
+      "edge_strength": 0.14
+    },
+    "diffusion_membrane": {
+      "texture": "assets/materials/diffusion_membrane.png",
+      "period_u_mm": 625.0,
+      "period_v_mm": 900.0,
+      "opacity": 0.9,
+      "ambient": 0.72,
+      "diffuse": 0.28,
+      "edge_strength": 0.1
+    },
+    "clt_spruce_visual": {
+      "texture": "assets/materials/clt_spruce_visual.png",
+      "period_u_mm": 625.0,
+      "period_v_mm": 900.0,
+      "opacity": 1.0,
+      "ambient": 0.68,
+      "diffuse": 0.36,
+      "edge_strength": 0.13
+    },
+    "clt_spruce_transverse": {
+      "texture": "assets/materials/clt_spruce_transverse.png",
+      "period_u_mm": 625.0,
+      "period_v_mm": 900.0,
+      "opacity": 1.0,
+      "ambient": 0.65,
+      "diffuse": 0.36,
+      "edge_strength": 0.16
+    },
+    "clt_spruce_nonvisual": {
+      "texture": "assets/materials/clt_spruce_nonvisual.png",
+      "period_u_mm": 625.0,
+      "period_v_mm": 900.0,
+      "opacity": 1.0,
+      "ambient": 0.63,
+      "diffuse": 0.36,
+      "edge_strength": 0.18
+    },
+    "clt_bore_shadow": {
+      "texture": "assets/materials/clt_bore_shadow.png",
+      "period_u_mm": 120.0,
+      "period_v_mm": 120.0,
+      "opacity": 1.0,
+      "ambient": 0.50,
+      "diffuse": 0.24,
+      "edge_strength": 0.05
+    }
+  }
+}

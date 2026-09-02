@@ -1,0 +1,49 @@
+{
+  "panel_id": "1.3",
+  "standard_id": "PREFA_SOPIK_RENDER_STD_01",
+  "status": "PASS",
+  "declared_total_thickness_mm": 225.5,
+  "calculated_total_thickness_mm": 225.5,
+  "logical_layer_count": 6,
+  "geometry_object_count": 7,
+  "geometry_sha256": "34e23db9775a91117aad22eee3f501d864265329cb3b5c15de19f191676ec8b6",
+  "checks": {
+    "declared_equals_geometry": true,
+    "declared_equals_additive_sum": true,
+    "fermacell_actual_thickness_12_5": true,
+    "service_frame_60x40": true,
+    "structural_frame_60x160": true,
+    "service_cavity_delivered_open": true,
+    "interior_finish_not_delivered": true,
+    "electrical_preparation_by_client": true,
+    "customer_completion_documented": true,
+    "no_contact_insulation_or_facade_layers": true,
+    "hosted_infill_not_double_counted": true
+  },
+  "layer_ranges_mm": {
+    "L01": [
+      0.0,
+      40.0
+    ],
+    "L02": [
+      40.0,
+      52.5
+    ],
+    "L03": [
+      52.5,
+      53.0
+    ],
+    "L04": [
+      53.0,
+      213.0
+    ],
+    "L05": [
+      53.0,
+      213.0
+    ],
+    "L06": [
+      213.0,
+      225.5
+    ]
+  }
+}

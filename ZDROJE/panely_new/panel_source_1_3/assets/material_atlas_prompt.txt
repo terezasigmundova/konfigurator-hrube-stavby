@@ -1,0 +1,13 @@
+Use case: product-mockup
+Asset type: material-texture reference atlas for a deterministic architectural 3D renderer
+Primary request: create a perfectly front-facing, orthographic 3 columns by 2 rows atlas of six square, evenly sized, edge-to-edge construction material swatches. No perspective, no objects, no bevels, no shadows between tiles.
+Grid order:
+top-left: raw light-grey gypsum-fibre board (Fermacell-like), matte mineral paper surface, subtle fine fibres and sparse pores;
+top-center: planed spruce KVH timber, pale honey colour, long straight realistic grain running vertically, a few restrained small knots;
+top-right: soft mineral wool insulation, warm yellow-beige, dense randomly oriented fibres, compressed batt texture;
+bottom-left: blue-green vapour-control membrane, semi-translucent polymer sheet, very subtle woven reinforcement and soft wrinkles;
+bottom-center: rigid mineral-wool facade insulation, olive-yellow-beige, denser and more uniform than soft wool, visible compressed fibre texture;
+bottom-right: grey cementitious reinforced base-coat, fine granular mineral texture with an extremely subtle embedded white glass-fibre mesh, no finish render.
+Style/medium: high-resolution photorealistic PBR albedo texture photography, neutral diffuse lighting, colour calibrated, no directional highlight except material microstructure.
+Composition: exact 3x2 grid filling the entire landscape canvas; each tile exactly the same size; boundaries aligned at 1/3 and 2/3 width and 1/2 height.
+Constraints: no text, labels, numbers, logos, watermark, perspective, sample edges, frames, gaps, mortar joints, decorative background, strong shadows, dramatic lighting; textures should be suitable for cropping into repeatable square material tiles and must preserve true material scale.

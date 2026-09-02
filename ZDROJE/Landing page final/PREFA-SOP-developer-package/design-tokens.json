@@ -1,0 +1,38 @@
+{
+  "colors": {
+    "paper": "#f7f5f1",
+    "white": "#ffffff",
+    "linen": "#e7e0d5",
+    "line": "#ded8cf",
+    "lineSoft": "#e9e4dc",
+    "stone": "#9e998e",
+    "cedar": "#5e5c55",
+    "ink": "#292527",
+    "aqua": "#759192",
+    "amber": "#d39a52"
+  },
+  "typography": {
+    "display": "Gotham UI",
+    "ui": "Flama UI",
+    "note": "Justus UI",
+    "safeSansFallback": "Arial, sans-serif",
+    "safeSerifFallback": "Georgia, serif"
+  },
+  "spacingPx": [8, 12, 16, 20, 24, 32, 40, 48, 64],
+  "geometry": {
+    "borderWidthPx": 1,
+    "cornerRadiusPx": 2,
+    "backgroundGridPx": 64
+  },
+  "workbench": {
+    "headerHeightPx": 76,
+    "footerHeightPx": 88,
+    "sidebarWidthPx": 236,
+    "catalogWidthPx": 352
+  },
+  "breakpointsPx": {
+    "wide": 1440,
+    "tablet": 1120,
+    "mobile": 760
+  }
+}

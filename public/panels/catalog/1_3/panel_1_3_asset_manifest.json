@@ -1,0 +1,173 @@
+{
+  "panel_id": "1.3",
+  "geometry_sha256": "34e23db9775a91117aad22eee3f501d864265329cb3b5c15de19f191676ec8b6",
+  "composites": {
+    "full_png": "output/photoreal/panel_1_3_photoreal_full.png",
+    "assembled_png": "output/photoreal/panel_1_3_photoreal_assembled_cutaway.png",
+    "assembled_webp": "output/photoreal/panel_1_3_photoreal_assembled_cutaway.webp",
+    "exploded_png": "output/photoreal/panel_1_3_photoreal_exploded.png",
+    "exploded_webp": "output/photoreal/panel_1_3_photoreal_exploded.webp",
+    "layer_table_png": "output/panel_1_3_vrstvy_a_vlastnosti.png"
+  },
+  "layers": [
+    {
+      "state": "assembled",
+      "layer_id": "L01",
+      "sprite": "output/photoreal/layers/assembled/L01.webp",
+      "mask": "output/photoreal/masks/assembled/L01.png"
+    },
+    {
+      "state": "assembled",
+      "layer_id": "L02",
+      "sprite": "output/photoreal/layers/assembled/L02.webp",
+      "mask": "output/photoreal/masks/assembled/L02.png"
+    },
+    {
+      "state": "assembled",
+      "layer_id": "L03",
+      "sprite": "output/photoreal/layers/assembled/L03.webp",
+      "mask": "output/photoreal/masks/assembled/L03.png"
+    },
+    {
+      "state": "assembled",
+      "layer_id": "L04",
+      "sprite": "output/photoreal/layers/assembled/L04.webp",
+      "mask": "output/photoreal/masks/assembled/L04.png"
+    },
+    {
+      "state": "assembled",
+      "layer_id": "L05",
+      "sprite": "output/photoreal/layers/assembled/L05.webp",
+      "mask": "output/photoreal/masks/assembled/L05.png"
+    },
+    {
+      "state": "assembled",
+      "layer_id": "L06",
+      "sprite": "output/photoreal/layers/assembled/L06.webp",
+      "mask": "output/photoreal/masks/assembled/L06.png"
+    },
+    {
+      "state": "exploded",
+      "layer_id": "L01",
+      "sprite": "output/photoreal/layers/exploded/L01.webp",
+      "mask": "output/photoreal/masks/exploded/L01.png"
+    },
+    {
+      "state": "exploded",
+      "layer_id": "L02",
+      "sprite": "output/photoreal/layers/exploded/L02.webp",
+      "mask": "output/photoreal/masks/exploded/L02.png"
+    },
+    {
+      "state": "exploded",
+      "layer_id": "L03",
+      "sprite": "output/photoreal/layers/exploded/L03.webp",
+      "mask": "output/photoreal/masks/exploded/L03.png"
+    },
+    {
+      "state": "exploded",
+      "layer_id": "L04",
+      "sprite": "output/photoreal/layers/exploded/L04.webp",
+      "mask": "output/photoreal/masks/exploded/L04.png"
+    },
+    {
+      "state": "exploded",
+      "layer_id": "L05",
+      "sprite": "output/photoreal/layers/exploded/L05.webp",
+      "mask": "output/photoreal/masks/exploded/L05.png"
+    },
+    {
+      "state": "exploded",
+      "layer_id": "L06",
+      "sprite": "output/photoreal/layers/exploded/L06.webp",
+      "mask": "output/photoreal/masks/exploded/L06.png"
+    }
+  ],
+  "layer_definitions": [
+    {
+      "id": "L01",
+      "derived_from_layer_id": "L02",
+      "name": "Instalační předstěna z latí 60/40 mm",
+      "thickness_mm": 40.0,
+      "function": "Dodávaný otevřený dřevěný rošt. Elektro-přípravu, izolaci dutiny a vnitřní zaklopení deskou Fermacell zajišťuje klient.",
+      "host_layer_id": null
+    },
+    {
+      "id": "L02",
+      "derived_from_layer_id": "L04",
+      "name": "Sádrovláknitá deska Fermacell 12,5 mm",
+      "thickness_mm": 12.5,
+      "function": "Ztužující opláštění před nosnou konstrukcí a souvislý podklad parotěsné roviny; po dokončení klientem zůstává uvnitř instalační předstěny.",
+      "host_layer_id": null
+    },
+    {
+      "id": "L03",
+      "derived_from_layer_id": "L05",
+      "name": "Parozábrana",
+      "thickness_mm": 0.5,
+      "function": "Omezení průniku vodní páry z interiéru do nosné části panelu.",
+      "host_layer_id": null
+    },
+    {
+      "id": "L04",
+      "derived_from_layer_id": "L06",
+      "name": "Nosný rám KVH 60/160 mm",
+      "thickness_mm": 160.0,
+      "function": "Hlavní nosná dřevěná konstrukce obvodového panelu.",
+      "host_layer_id": null
+    },
+    {
+      "id": "L05",
+      "derived_from_layer_id": "L07",
+      "name": "Minerální izolace v nosném rámu",
+      "thickness_mm": 160.0,
+      "function": "Hlavní tepelněizolační výplň mezi sloupky nosného rámu.",
+      "host_layer_id": "L04"
+    },
+    {
+      "id": "L06",
+      "derived_from_layer_id": "L08",
+      "name": "Sádrovláknitá deska Fermacell 12,5 mm",
+      "thickness_mm": 12.5,
+      "function": "Vnější ztužující opláštění a dodávaný vnější povrch panelu bez fasádního systému.",
+      "host_layer_id": null
+    }
+  ],
+  "features": [
+    {
+      "id": "CS01",
+      "type": "customer_completion",
+      "required": true,
+      "host_layer_ids": [
+        "L01"
+      ],
+      "user_heading": "Elektro-přípravu a dokončení předstěny zajišťuje klient",
+      "user_description": "Součástí dodávky je pouze otevřený dřevěný rošt instalační předstěny tloušťky 40 mm. Klient si zcela zajišťuje přípravu pro elektroinstalaci, vložení minerální izolace do předstěny a její vnitřní zaklopení deskou Fermacell včetně finální povrchové úpravy.",
+      "client_supplied_items": [
+        "příprava pro elektroinstalaci včetně chrániček a vývrtů pro krabice",
+        "minerální izolace do 40mm instalační předstěny",
+        "vnitřní deska Fermacell 12,5 mm",
+        "finální povrchová úprava interiéru"
+      ],
+      "electrical_preparation": {
+        "included": false,
+        "responsibility": "client",
+        "host_layer_ids": [
+          "L01"
+        ],
+        "supplier_included_items": [],
+        "client_supplied_items": [
+          "veškerá příprava pro elektroinstalaci v předstěně",
+          "elektroinstalační chráničky",
+          "vývrty pro elektroinstalační krabice"
+        ]
+      },
+      "interaction": {
+        "hover_target_layer_ids": [
+          "L01"
+        ],
+        "on_select": "show_customer_completion_description"
+      }
+    }
+  ]
+}

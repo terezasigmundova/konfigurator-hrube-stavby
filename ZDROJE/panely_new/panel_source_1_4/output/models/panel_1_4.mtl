@@ -1,0 +1,20 @@
+# Deterministic control materials
+newmtl clt_spruce_visual
+Kd 0.905882 0.741176 0.462745
+d 1.000000
+illum 2
+
+newmtl clt_spruce_transverse
+Kd 0.843137 0.658824 0.380392
+d 1.000000
+illum 2
+
+newmtl clt_spruce_nonvisual
+Kd 0.788235 0.607843 0.360784
+d 1.000000
+illum 2
+
+newmtl clt_bore_shadow
+Kd 0.227451 0.160784 0.109804
+d 1.000000
+illum 2

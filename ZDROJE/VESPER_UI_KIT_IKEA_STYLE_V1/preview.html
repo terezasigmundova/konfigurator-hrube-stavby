@@ -1,0 +1,659 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VESPER UI Kit — ikony a tlačítka</title>
+  <style>:root {
+  --vesper-navy: #0f172a;
+  --vesper-teal: #14b8a6;
+  --vesper-amber: #f59e0b;
+  --vesper-green: #10b981;
+  --vesper-red: #dc2626;
+
+  --vesper-surface: #ffffff;
+  --vesper-background: #f6f7f8;
+  --vesper-surface-soft: #f1f3f5;
+  --vesper-border: #d8dee8;
+  --vesper-text: #0f172a;
+  --vesper-text-muted: #64748b;
+  --vesper-focus: rgba(20, 184, 166, 0.36);
+
+  --vesper-radius-action: 8px;
+  --vesper-radius-pill: 999px;
+  --vesper-control-sm: 36px;
+  --vesper-control-md: 44px;
+  --vesper-control-lg: 52px;
+}
+
+
+
+.v-icon {
+  width: 20px;
+  height: 20px;
+  flex: 0 0 auto;
+  fill: none;
+  stroke: currentColor;
+}
+
+.v-btn,
+.v-pill,
+.v-icon-btn,
+.v-tool {
+  appearance: none;
+  border: 1px solid transparent;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 140ms ease, color 140ms ease, border-color 140ms ease, transform 80ms ease;
+}
+
+.v-btn:focus-visible,
+.v-pill:focus-visible,
+.v-icon-btn:focus-visible,
+.v-tool:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px var(--vesper-focus);
+}
+
+.v-btn:active,
+.v-pill:active,
+.v-icon-btn:active,
+.v-tool:active {
+  transform: translateY(1px);
+}
+
+.v-btn:disabled,
+.v-pill:disabled,
+.v-icon-btn:disabled,
+.v-tool:disabled {
+  opacity: 0.42;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.v-btn {
+  min-height: var(--vesper-control-md);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 20px;
+  border-radius: var(--vesper-radius-action);
+  white-space: nowrap;
+}
+
+.v-btn--large {
+  min-height: var(--vesper-control-lg);
+  padding-inline: 24px;
+}
+
+.v-btn--primary {
+  background: var(--vesper-navy);
+  color: #ffffff;
+}
+
+.v-btn--primary:hover { background: #1e293b; }
+
+.v-btn--teal {
+  background: var(--vesper-teal);
+  color: var(--vesper-navy);
+}
+
+.v-btn--teal:hover { background: #2dd4bf; }
+
+.v-btn--secondary {
+  background: var(--vesper-surface);
+  color: var(--vesper-navy);
+  border-color: var(--vesper-navy);
+}
+
+.v-btn--secondary:hover { background: var(--vesper-surface-soft); }
+
+.v-btn--soft {
+  background: var(--vesper-surface-soft);
+  color: var(--vesper-navy);
+}
+
+.v-btn--soft:hover { background: #e5e7eb; }
+
+.v-btn--danger {
+  background: var(--vesper-surface);
+  color: var(--vesper-red);
+  border-color: var(--vesper-border);
+}
+
+.v-btn--danger:hover { background: #fef2f2; border-color: var(--vesper-red); }
+
+.v-pill {
+  min-height: var(--vesper-control-lg);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 0 22px;
+  border-radius: var(--vesper-radius-pill);
+  background: var(--vesper-surface-soft);
+  color: var(--vesper-navy);
+  white-space: nowrap;
+}
+
+.v-pill:hover { background: #e5e7eb; }
+
+.v-pill[aria-pressed='true'],
+.v-pill--selected {
+  background: var(--vesper-surface);
+  border-color: var(--vesper-navy);
+  border-width: 2px;
+}
+
+.v-icon-btn {
+  width: var(--vesper-control-md);
+  height: var(--vesper-control-md);
+  display: inline-grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--vesper-surface-soft);
+  color: var(--vesper-navy);
+}
+
+.v-icon-btn:hover { background: #e5e7eb; }
+
+.v-tool {
+  min-height: var(--vesper-control-md);
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 0 14px;
+  border-radius: var(--vesper-radius-action);
+  background: var(--vesper-surface);
+  border-color: var(--vesper-border);
+  color: var(--vesper-navy);
+}
+
+.v-tool:hover { background: var(--vesper-surface-soft); }
+
+.v-tool[aria-pressed='true'],
+.v-tool--active {
+  background: var(--vesper-navy);
+  color: #ffffff;
+  border-color: var(--vesper-navy);
+}
+
+.v-status {
+  min-height: 28px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 0 10px;
+  border-radius: var(--vesper-radius-pill);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.v-status .v-icon { width: 16px; height: 16px; }
+.v-status--complete { background: #ecfdf5; color: #047857; }
+.v-status--warning { background: #fffbeb; color: #a16207; }
+.v-status--review { background: #fff7ed; color: #c2410c; }
+.v-status--neutral { background: var(--vesper-surface-soft); color: var(--vesper-text-muted); }
+
+@media (prefers-reduced-motion: reduce) {
+  .v-btn, .v-pill, .v-icon-btn, .v-tool { transition: none; }
+}
+
+    * { box-sizing: border-box; }
+    body { margin: 0; color: var(--vesper-text); background: var(--vesper-background); font-family: Arial, Helvetica, sans-serif; }
+    .page { max-width: 1240px; margin: 0 auto; padding: 48px 32px 80px; }
+    .header { display: flex; justify-content: space-between; align-items: end; gap: 24px; margin-bottom: 40px; }
+    h1 { margin: 0 0 8px; font-size: 34px; }
+    h2 { margin: 36px 0 16px; font-size: 22px; }
+    p { color: var(--vesper-text-muted); margin: 0; }
+    .sample { background: var(--vesper-surface); border: 1px solid var(--vesper-border); border-radius: 12px; padding: 24px; margin-bottom: 22px; }
+    .row { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+    .icon-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(145px, 1fr)); gap: 10px; }
+    .icon-card { min-height: 118px; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 7px; padding: 14px; background: var(--vesper-surface); border: 1px solid var(--vesper-border); border-radius: 8px; }
+    .preview-icon { width: 28px; height: 28px; fill: none; stroke: currentColor; color: var(--vesper-navy); }
+    .icon-card strong { font-size: 14px; }
+    .icon-card code { font-size: 12px; color: var(--vesper-text-muted); }
+    .kicker { color: var(--vesper-teal); font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+    .status-row { margin-top: 14px; }
+    @media (max-width: 640px) { .page { padding: 28px 18px; } .header { align-items: flex-start; flex-direction: column; } }
+  </style>
+</head>
+<body>
+  <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">  <symbol id="icon-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+    <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+  </symbol>
+  <symbol id="icon-external-wall" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="3" y="3" width="18" height="18" rx="1" />
+    <path d="M7 7h10v10H7z" />
+    <path d="M3 9h4M17 9h4M9 3v4M9 17v4" />
+  </symbol>
+  <symbol id="icon-internal-wall" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="3" y="3" width="18" height="18" rx="1" />
+    <path d="M12 3v7M12 14v7M3 12h7M14 12h7" />
+    <circle cx="12" cy="12" r="2" />
+  </symbol>
+  <symbol id="icon-floor-slab" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M3 8h18v8H3z" />
+    <path d="M5 12h14M6 18h12M6 6h12" />
+  </symbol>
+  <symbol id="icon-roof" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m3 12 9-8 9 8" />
+    <path d="M5 11v9h14v-9" />
+    <path d="M12 4v16" />
+  </symbol>
+  <symbol id="icon-review" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
+    <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+    <path d="m9 14 2 2 4-4" />
+  </symbol>
+  <symbol id="icon-order" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="8" cy="21" r="1" />
+    <circle cx="19" cy="21" r="1" />
+    <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" />
+  </symbol>
+  <symbol id="icon-location" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+    <circle cx="12" cy="10" r="3" />
+  </symbol>
+  <symbol id="icon-storeys" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M10 12h4" />
+    <path d="M10 8h4" />
+    <path d="M14 21v-3a2 2 0 0 0-4 0v3" />
+    <path d="M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2" />
+    <path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16" />
+  </symbol>
+  <symbol id="icon-upload" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
+    <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+    <path d="M12 12v6" />
+    <path d="m15 15-3-3-3 3" />
+  </symbol>
+  <symbol id="icon-document" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
+    <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+    <path d="M10 9H8" />
+    <path d="M16 13H8" />
+    <path d="M16 17H8" />
+  </symbol>
+  <symbol id="icon-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M8 2v4" />
+    <path d="M16 2v4" />
+    <rect width="18" height="18" x="3" y="4" rx="2" />
+    <path d="M3 10h18" />
+    <path d="M8 14h.01" />
+    <path d="M12 14h.01" />
+    <path d="M16 14h.01" />
+    <path d="M8 18h.01" />
+    <path d="M12 18h.01" />
+    <path d="M16 18h.01" />
+  </symbol>
+  <symbol id="icon-height" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m21 16-4 4-4-4" />
+    <path d="M17 20V4" />
+    <path d="m3 8 4-4 4 4" />
+    <path d="M7 4v16" />
+  </symbol>
+  <symbol id="icon-ruler" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z" />
+    <path d="m14.5 12.5 2-2" />
+    <path d="m11.5 9.5 2-2" />
+    <path d="m8.5 6.5 2-2" />
+    <path d="m17.5 15.5 2-2" />
+  </symbol>
+  <symbol id="icon-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <rect width="18" height="11" x="3" y="11" rx="2" ry="2" />
+    <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+  </symbol>
+  <symbol id="icon-pan" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M18 11V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2" />
+    <path d="M14 10V4a2 2 0 0 0-2-2a2 2 0 0 0-2 2v2" />
+    <path d="M10 10.5V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2v8" />
+    <path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15" />
+  </symbol>
+  <symbol id="icon-calibrate" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z" />
+    <path d="m14.5 12.5 2-2" />
+    <path d="m11.5 9.5 2-2" />
+    <path d="m8.5 6.5 2-2" />
+    <path d="m17.5 15.5 2-2" />
+  </symbol>
+  <symbol id="icon-draw-wall" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 19V5h8v6h8" />
+    <circle cx="4" cy="19" r="1.5" />
+    <circle cx="4" cy="5" r="1.5" />
+    <circle cx="12" cy="11" r="1.5" />
+    <circle cx="20" cy="11" r="1.5" />
+  </symbol>
+  <symbol id="icon-draw-area" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m5 4 14 3 1 11-13 2-3-8z" />
+    <circle cx="5" cy="4" r="1.3" />
+    <circle cx="19" cy="7" r="1.3" />
+    <circle cx="20" cy="18" r="1.3" />
+    <circle cx="7" cy="20" r="1.3" />
+    <circle cx="4" cy="12" r="1.3" />
+  </symbol>
+  <symbol id="icon-opening" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="4" y="3" width="16" height="18" rx="1" />
+    <path d="M9 21V8h7v13M9 8l7 4" />
+    <circle cx="14" cy="14" r="0.7" fill="currentColor" stroke="none" />
+  </symbol>
+  <symbol id="icon-stair-opening" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="3" y="4" width="18" height="16" rx="1" stroke-dasharray="3 2" />
+    <path d="M6 17h3v-3h3v-3h3V8h3" />
+    <path d="m16 6 2 2-2 2" />
+  </symbol>
+  <symbol id="icon-select" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4.037 4.688a.495.495 0 0 1 .651-.651l16 6.5a.5.5 0 0 1-.063.947l-6.124 1.58a2 2 0 0 0-1.438 1.435l-1.579 6.126a.5.5 0 0 1-.947.063z" />
+  </symbol>
+  <symbol id="icon-move" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 2v20" />
+    <path d="m15 19-3 3-3-3" />
+    <path d="m19 9 3 3-3 3" />
+    <path d="M2 12h20" />
+    <path d="m5 9-3 3 3 3" />
+    <path d="m9 5 3-3 3 3" />
+  </symbol>
+  <symbol id="icon-snap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m12 15 4 4" />
+    <path d="M2.352 10.648a1.205 1.205 0 0 0 0 1.704l2.296 2.296a1.205 1.205 0 0 0 1.704 0l6.029-6.029a1 1 0 1 1 3 3l-6.029 6.029a1.205 1.205 0 0 0 0 1.704l2.296 2.296a1.205 1.205 0 0 0 1.704 0l6.365-6.367A1 1 0 0 0 8.716 4.282z" />
+    <path d="m5 8 4 4" />
+  </symbol>
+  <symbol id="icon-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z" />
+    <path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12" />
+    <path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17" />
+  </symbol>
+  <symbol id="icon-undo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M9 14 4 9l5-5" />
+    <path d="M4 9h10.5a5.5 5.5 0 0 1 5.5 5.5a5.5 5.5 0 0 1-5.5 5.5H11" />
+  </symbol>
+  <symbol id="icon-redo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m15 14 5-5-5-5" />
+    <path d="M20 9H9.5A5.5 5.5 0 0 0 4 14.5A5.5 5.5 0 0 0 9.5 20H13" />
+  </symbol>
+  <symbol id="icon-delete" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M10 11v6" />
+    <path d="M14 11v6" />
+    <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6" />
+    <path d="M3 6h18" />
+    <path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" />
+  </symbol>
+  <symbol id="icon-zoom-in" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="11" cy="11" r="8" />
+    <line x1="21" x2="16.65" y1="21" y2="16.65" />
+    <line x1="11" x2="11" y1="8" y2="14" />
+    <line x1="8" x2="14" y1="11" y2="11" />
+  </symbol>
+  <symbol id="icon-zoom-out" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="11" cy="11" r="8" />
+    <line x1="21" x2="16.65" y1="21" y2="16.65" />
+    <line x1="8" x2="14" y1="11" y2="11" />
+  </symbol>
+  <symbol id="icon-fit" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M8 3H5a2 2 0 0 0-2 2v3" />
+    <path d="M21 8V5a2 2 0 0 0-2-2h-3" />
+    <path d="M3 16v3a2 2 0 0 0 2 2h3" />
+    <path d="M16 21h3a2 2 0 0 0 2-2v-3" />
+  </symbol>
+  <symbol id="icon-panel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z" />
+    <path d="M12 22V12" />
+    <polyline points="3.29 7 12 12 20.71 7" />
+    <path d="m7.5 4.27 9 5.15" />
+  </symbol>
+  <symbol id="icon-opening-large" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="3" y="4" width="18" height="16" rx="1" />
+    <path d="M12 4v16M3 12h18" />
+    <path d="m6 17 3-3 3 3 3-3 3 3" />
+  </symbol>
+  <symbol id="icon-span" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 6v12M20 6v12M4 12h16" />
+    <path d="m8 9-4 3 4 3M16 9l4 3-4 3" />
+  </symbol>
+  <symbol id="icon-fire" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M16 3v2.107" />
+    <path d="M17 9c1 3 2.5 3.5 3.5 4.5A5 5 0 0 1 22 17a5 5 0 0 1-10 0c0-.3 0-.6.1-.9a2 2 0 1 0 3.3-2C13 11.5 16 9 17 9" />
+    <path d="M21 8.274V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3.938" />
+    <path d="M3 15h5.253" />
+    <path d="M3 9h8.228" />
+    <path d="M8 15v6" />
+    <path d="M8 3v6" />
+  </symbol>
+  <symbol id="icon-truck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2" />
+    <path d="M15 18H9" />
+    <path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14" />
+    <circle cx="17" cy="18" r="2" />
+    <circle cx="7" cy="18" r="2" />
+  </symbol>
+  <symbol id="icon-crane" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M5 21V4h10M5 8h14M13 8v7" />
+    <path d="m5 4 4 4M9 4 5 8" />
+    <path d="M13 15h3v3h-3zM19 8v3" />
+    <path d="M3 21h8" />
+  </symbol>
+  <symbol id="icon-installation" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M10 10V5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5" />
+    <path d="M14 6a6 6 0 0 1 6 6v3" />
+    <path d="M4 15v-3a6 6 0 0 1 6-6" />
+    <rect x="2" y="15" width="20" height="4" rx="1" />
+  </symbol>
+  <symbol id="icon-site" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="2" y="6" width="20" height="8" rx="1" />
+    <path d="M17 14v7" />
+    <path d="M7 14v7" />
+    <path d="M17 3v3" />
+    <path d="M7 3v3" />
+    <path d="M10 14 2.3 6.3" />
+    <path d="m14 6 7.7 7.7" />
+    <path d="m8 6 8 8" />
+  </symbol>
+  <symbol id="icon-price" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z" />
+    <circle cx="7.5" cy="7.5" r=".5" fill="currentColor" />
+  </symbol>
+  <symbol id="icon-calculation" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <rect width="16" height="20" x="4" y="2" rx="2" />
+    <line x1="8" x2="16" y1="6" y2="6" />
+    <line x1="16" x2="16" y1="14" y2="18" />
+    <path d="M16 10h.01" />
+    <path d="M12 10h.01" />
+    <path d="M8 10h.01" />
+    <path d="M12 14h.01" />
+    <path d="M8 14h.01" />
+    <path d="M12 18h.01" />
+    <path d="M8 18h.01" />
+  </symbol>
+  <symbol id="icon-receipt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M13 16H8" />
+    <path d="M14 8H8" />
+    <path d="M16 12H8" />
+    <path d="M4 3a1 1 0 0 1 1-1 1.3 1.3 0 0 1 .7.2l.933.6a1.3 1.3 0 0 0 1.4 0l.934-.6a1.3 1.3 0 0 1 1.4 0l.933.6a1.3 1.3 0 0 0 1.4 0l.933-.6a1.3 1.3 0 0 1 1.4 0l.934.6a1.3 1.3 0 0 0 1.4 0l.933-.6A1.3 1.3 0 0 1 19 2a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1 1.3 1.3 0 0 1-.7-.2l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.934.6a1.3 1.3 0 0 1-1.4 0l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-1.4 0l-.934-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-.7.2 1 1 0 0 1-1-1z" />
+  </symbol>
+  <symbol id="icon-complete" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="10" />
+    <path d="m9 12 2 2 4-4" />
+  </symbol>
+  <symbol id="icon-warning" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3" />
+    <path d="M12 9v4" />
+    <path d="M12 17h.01" />
+  </symbol>
+  <symbol id="icon-review-needed" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="10" />
+    <line x1="12" x2="12" y1="8" y2="12" />
+    <line x1="12" x2="12.01" y1="16" y2="16" />
+  </symbol>
+  <symbol id="icon-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="10" />
+    <path d="M12 16v-4" />
+    <path d="M12 8h.01" />
+  </symbol>
+  <symbol id="icon-assumption" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M10.1 2.182a10 10 0 0 1 3.8 0" />
+    <path d="M13.9 21.818a10 10 0 0 1-3.8 0" />
+    <path d="M17.609 3.721a10 10 0 0 1 2.69 2.7" />
+    <path d="M2.182 13.9a10 10 0 0 1 0-3.8" />
+    <path d="M20.279 17.609a10 10 0 0 1-2.7 2.69" />
+    <path d="M21.818 10.1a10 10 0 0 1 0 3.8" />
+    <path d="M3.721 6.391a10 10 0 0 1 2.7-2.69" />
+    <path d="M6.391 20.279a10 10 0 0 1-2.69-2.7" />
+  </symbol>
+  <symbol id="icon-saved" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m17 15-5.5 5.5L9 18" />
+    <path d="M5.516 16.07A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 3.501 7.327" />
+  </symbol>
+  <symbol id="icon-edit" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M13 21h8" />
+    <path d="m15 5 4 4" />
+    <path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" />
+  </symbol>
+  <symbol id="icon-save" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M15.2 3a2 2 0 0 1 1.4.6l3.8 3.8a2 2 0 0 1 .6 1.4V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z" />
+    <path d="M17 21v-7a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v7" />
+    <path d="M7 3v4a1 1 0 0 0 1 1h7" />
+  </symbol>
+  <symbol id="icon-send" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" />
+    <path d="m21.854 2.147-10.94 10.939" />
+  </symbol>
+  <symbol id="icon-next" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m9 18 6-6-6-6" />
+  </symbol>
+  <symbol id="icon-back" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m15 18-6-6 6-6" />
+  </symbol>
+  <symbol id="icon-expand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m6 9 6 6 6-6" />
+  </symbol>
+  <symbol id="icon-collapse" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m18 15-6-6-6 6" />
+  </symbol>
+  <symbol id="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M18 6 6 18" />
+    <path d="m6 6 12 12" />
+  </symbol>
+  <symbol id="icon-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M5 12h14" />
+    <path d="M12 5v14" />
+  </symbol>
+  <symbol id="icon-minus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M5 12h14" />
+  </symbol>
+  <symbol id="icon-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m21 21-4.34-4.34" />
+    <circle cx="11" cy="11" r="8" />
+  </symbol>
+  <symbol id="icon-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
+    <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
+  </symbol>
+  <symbol id="icon-settings" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M14 17H5" />
+    <path d="M19 7h-9" />
+    <circle cx="17" cy="17" r="3" />
+    <circle cx="7" cy="7" r="3" />
+  </symbol></svg>
+  <main class="page">
+    <header class="header"><div><div class="kicker">Dřevěné konstrukce ŠOPÍK</div><h1>Ikony a tlačítka konfigurátoru</h1><p>Linkový systém 24 × 24 px, jednoduché ovládání a klidná produktová hierarchie.</p></div><div class="v-status v-status--complete"><svg class="v-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-complete"></use></svg>Připraveno pro vývoj</div></header>
+
+    <section class="sample"><h2 style="margin-top:0">Navigační volby</h2><div class="row">
+      <button class="v-pill" aria-pressed="false"><svg class="v-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-home"></use></svg>O vašem domě</button>
+      <button class="v-pill" aria-pressed="true"><svg class="v-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-external-wall"></use></svg>Vnější stěny</button>
+      <button class="v-pill" aria-pressed="false"><svg class="v-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-internal-wall"></use></svg>Vnitřní stěny</button>
+      <button class="v-pill" aria-pressed="false"><svg class="v-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-floor-slab"></use></svg>Stropy</button>
+      <button class="v-pill" aria-pressed="false"><svg class="v-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-roof"></use></svg>Střecha</button>
+    </div></section>
+
+    <section class="sample"><h2 style="margin-top:0">Hlavní tlačítka</h2><div class="row">
+      <button class="v-btn v-btn--primary">Uložit a pokračovat<svg class="v-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-next"></use></svg></button>
+      <button class="v-btn v-btn--teal"><svg class="v-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-save"></use></svg>Uložit projekt</button>
+      <button class="v-btn v-btn--secondary"><svg class="v-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-back"></use></svg>Zpět</button>
+      <button class="v-btn v-btn--soft"><svg class="v-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-edit"></use></svg>Upravit</button>
+      <button class="v-btn v-btn--danger"><svg class="v-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-delete"></use></svg>Odstranit</button>
+      <button class="v-btn v-btn--primary" disabled>Pokračovat</button>
+    </div></section>
+
+    <section class="sample"><h2 style="margin-top:0">Kreslicí nástroje</h2><div class="row">
+      <button class="v-tool"><svg class="v-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-pan"></use></svg>Posunout</button>
+      <button class="v-tool"><svg class="v-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-calibrate"></use></svg>Měřítko</button>
+      <button class="v-tool v-tool--active" aria-pressed="true"><svg class="v-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-draw-wall"></use></svg>Kreslit stěny</button>
+      <button class="v-tool"><svg class="v-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-select"></use></svg>Vybrat</button>
+      <button class="v-icon-btn" aria-label="Zpět"><svg class="v-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-undo"></use></svg></button>
+      <button class="v-icon-btn" aria-label="Znovu"><svg class="v-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-redo"></use></svg></button>
+      <button class="v-icon-btn" aria-label="Přiblížit"><svg class="v-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-zoom-in"></use></svg></button>
+      <button class="v-icon-btn" aria-label="Oddálit"><svg class="v-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-zoom-out"></use></svg></button>
+    </div><div class="row status-row">
+      <span class="v-status v-status--complete"><svg class="v-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-complete"></use></svg>Dokončeno</span>
+      <span class="v-status v-status--warning"><svg class="v-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-warning"></use></svg>Upozornění</span>
+      <span class="v-status v-status--review"><svg class="v-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-review-needed"></use></svg>Vyžaduje posouzení</span>
+      <span class="v-status v-status--neutral"><svg class="v-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-assumption"></use></svg>Předpoklad</span>
+    </div></section>
+
+    <section><h2>Hlavní kroky</h2><div class="icon-grid"><div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-home"></use></svg><strong>O vašem domě</strong><code>home</code></div>
+<div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-external-wall"></use></svg><strong>Vnější stěny</strong><code>external-wall</code></div>
+<div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-internal-wall"></use></svg><strong>Vnitřní stěny</strong><code>internal-wall</code></div>
+<div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-floor-slab"></use></svg><strong>Podlaha a strop</strong><code>floor-slab</code></div>
+<div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-roof"></use></svg><strong>Střecha</strong><code>roof</code></div>
+<div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-review"></use></svg><strong>Kontrola</strong><code>review</code></div>
+<div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-order"></use></svg><strong>Cena a předobjednávka</strong><code>order</code></div></div></section>
+<section><h2>Projekt a podklady</h2><div class="icon-grid"><div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-location"></use></svg><strong>Místo stavby</strong><code>location</code></div>
+<div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-storeys"></use></svg><strong>Počet podlaží</strong><code>storeys</code></div>
+<div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-upload"></use></svg><strong>Nahrát výkres</strong><code>upload</code></div>
+<div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-document"></use></svg><strong>Projektový dokument</strong><code>document</code></div>
+<div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-calendar"></use></svg><strong>Termín montáže</strong><code>calendar</code></div>
+<div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-height"></use></svg><strong>Výška podlaží</strong><code>height</code></div>
+<div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-ruler"></use></svg><strong>Rozměr</strong><code>ruler</code></div>
+<div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-lock"></use></svg><strong>Uzamčeno</strong><code>lock</code></div></div></section>
+<section><h2>Kreslicí nástroje</h2><div class="icon-grid"><div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-pan"></use></svg><strong>Posunout podklad</strong><code>pan</code></div>
+<div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-calibrate"></use></svg><strong>Nastavit měřítko</strong><code>calibrate</code></div>
+<div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-draw-wall"></use></svg><strong>Kreslit stěnu</strong><code>draw-wall</code></div>
+<div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-draw-area"></use></svg><strong>Kreslit plochu</strong><code>draw-area</code></div>
+<div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-opening"></use></svg><strong>Dveřní otvor</strong><code>opening</code></div>
+<div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-stair-opening"></use></svg><strong>Schodišťový otvor</strong><code>stair-opening</code></div>
+<div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-select"></use></svg><strong>Vybrat</strong><code>select</code></div>
+<div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-move"></use></svg><strong>Přesunout</strong><code>move</code></div>
+<div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-snap"></use></svg><strong>Přichytávání</strong><code>snap</code></div>
+<div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-layers"></use></svg><strong>Vrstvy</strong><code>layers</code></div>
+<div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-undo"></use></svg><strong>Zpět</strong><code>undo</code></div>
+<div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-redo"></use></svg><strong>Znovu</strong><code>redo</code></div>
+<div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-delete"></use></svg><strong>Odstranit</strong><code>delete</code></div>
+<div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-zoom-in"></use></svg><strong>Přiblížit</strong><code>zoom-in</code></div>
+<div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-zoom-out"></use></svg><strong>Oddálit</strong><code>zoom-out</code></div>
+<div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-fit"></use></svg><strong>Přizpůsobit výkres</strong><code>fit</code></div></div></section>
+<section><h2>Konstrukce a podmínky</h2><div class="icon-grid"><div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-panel"></use></svg><strong>Typizovaný panel</strong><code>panel</code></div>
+<div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-opening-large"></use></svg><strong>Velkoformátový otvor</strong><code>opening-large</code></div>
+<div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-span"></use></svg><strong>Rozpon konstrukce</strong><code>span</code></div>
+<div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-fire"></use></svg><strong>Požární konstrukce</strong><code>fire</code></div>
+<div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-truck"></use></svg><strong>Kamionová doprava</strong><code>truck</code></div>
+<div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-crane"></use></svg><strong>Autojeřáb</strong><code>crane</code></div>
+<div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-installation"></use></svg><strong>Montáž</strong><code>installation</code></div>
+<div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-site"></use></svg><strong>Zařízení staveniště</strong><code>site</code></div>
+<div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-price"></use></svg><strong>Cena</strong><code>price</code></div>
+<div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-calculation"></use></svg><strong>Kalkulace</strong><code>calculation</code></div>
+<div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-receipt"></use></svg><strong>Rozpad ceny</strong><code>receipt</code></div></div></section>
+<section><h2>Stavy a obecné akce</h2><div class="icon-grid"><div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-complete"></use></svg><strong>Dokončeno</strong><code>complete</code></div>
+<div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-warning"></use></svg><strong>Upozornění</strong><code>warning</code></div>
+<div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-review-needed"></use></svg><strong>Vyžaduje posouzení</strong><code>review-needed</code></div>
+<div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-info"></use></svg><strong>Informace</strong><code>info</code></div>
+<div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-assumption"></use></svg><strong>Předpoklad</strong><code>assumption</code></div>
+<div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-saved"></use></svg><strong>Uloženo</strong><code>saved</code></div>
+<div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-edit"></use></svg><strong>Upravit</strong><code>edit</code></div>
+<div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-save"></use></svg><strong>Uložit</strong><code>save</code></div>
+<div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-send"></use></svg><strong>Odeslat</strong><code>send</code></div>
+<div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-next"></use></svg><strong>Pokračovat</strong><code>next</code></div>
+<div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-back"></use></svg><strong>Zpět</strong><code>back</code></div>
+<div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-expand"></use></svg><strong>Rozbalit</strong><code>expand</code></div>
+<div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-collapse"></use></svg><strong>Sbalit</strong><code>collapse</code></div>
+<div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-close"></use></svg><strong>Zavřít</strong><code>close</code></div>
+<div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-plus"></use></svg><strong>Přidat</strong><code>plus</code></div>
+<div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-minus"></use></svg><strong>Odebrat</strong><code>minus</code></div>
+<div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-search"></use></svg><strong>Hledat</strong><code>search</code></div>
+<div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-copy"></use></svg><strong>Duplikovat</strong><code>copy</code></div>
+<div class="icon-card"><svg class="preview-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-settings"></use></svg><strong>Nastavení</strong><code>settings</code></div></div></section>
+  </main>
+</body>
+</html>

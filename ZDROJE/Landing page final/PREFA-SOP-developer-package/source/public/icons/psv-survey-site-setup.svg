@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="32" viewBox="0 0 48 32" style="color:#5E5C55">
+  <g fill="none" stroke="currentColor" stroke-width="1.15" stroke-linecap="butt" stroke-linejoin="miter">
+    <path d="M2 8h18M2 12h18M2 18h18M2 24h18M11 8 5 4.5M8.5 12 4 15.5M11 18l5 4"/>
+    <path d="M24 10h7v5h-7zM27.5 15v3M27.5 18 23 27M27.5 18l4.5 9M27.5 18v9M33 14h13v6H33zM35 14l-2 4M40 14l-3 6M45 14l-3 6M35 20v7M44 20v7M33 27h4M42 27h4"/>
+  </g>
+</svg>

@@ -1,0 +1,21 @@
+:root {
+  --vesper-navy: #0f172a;
+  --vesper-teal: #14b8a6;
+  --vesper-amber: #f59e0b;
+  --vesper-green: #10b981;
+  --vesper-red: #dc2626;
+
+  --vesper-surface: #ffffff;
+  --vesper-background: #f6f7f8;
+  --vesper-surface-soft: #f1f3f5;
+  --vesper-border: #d8dee8;
+  --vesper-text: #0f172a;
+  --vesper-text-muted: #64748b;
+  --vesper-focus: rgba(20, 184, 166, 0.36);
+
+  --vesper-radius-action: 8px;
+  --vesper-radius-pill: 999px;
+  --vesper-control-sm: 36px;
+  --vesper-control-md: 44px;
+  --vesper-control-lg: 52px;
+}

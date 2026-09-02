@@ -1,0 +1,368 @@
+[
+  {
+    "id": "home",
+    "label": "O vašem domě",
+    "group": "steps",
+    "groupLabel": "Hlavní kroky"
+  },
+  {
+    "id": "external-wall",
+    "label": "Vnější stěny",
+    "group": "steps",
+    "groupLabel": "Hlavní kroky"
+  },
+  {
+    "id": "internal-wall",
+    "label": "Vnitřní stěny",
+    "group": "steps",
+    "groupLabel": "Hlavní kroky"
+  },
+  {
+    "id": "floor-slab",
+    "label": "Podlaha a strop",
+    "group": "steps",
+    "groupLabel": "Hlavní kroky"
+  },
+  {
+    "id": "roof",
+    "label": "Střecha",
+    "group": "steps",
+    "groupLabel": "Hlavní kroky"
+  },
+  {
+    "id": "review",
+    "label": "Kontrola",
+    "group": "steps",
+    "groupLabel": "Hlavní kroky"
+  },
+  {
+    "id": "order",
+    "label": "Cena a předobjednávka",
+    "group": "steps",
+    "groupLabel": "Hlavní kroky"
+  },
+  {
+    "id": "location",
+    "label": "Místo stavby",
+    "group": "project",
+    "groupLabel": "Projekt a podklady"
+  },
+  {
+    "id": "storeys",
+    "label": "Počet podlaží",
+    "group": "project",
+    "groupLabel": "Projekt a podklady"
+  },
+  {
+    "id": "upload",
+    "label": "Nahrát výkres",
+    "group": "project",
+    "groupLabel": "Projekt a podklady"
+  },
+  {
+    "id": "document",
+    "label": "Projektový dokument",
+    "group": "project",
+    "groupLabel": "Projekt a podklady"
+  },
+  {
+    "id": "calendar",
+    "label": "Termín montáže",
+    "group": "project",
+    "groupLabel": "Projekt a podklady"
+  },
+  {
+    "id": "height",
+    "label": "Výška podlaží",
+    "group": "project",
+    "groupLabel": "Projekt a podklady"
+  },
+  {
+    "id": "ruler",
+    "label": "Rozměr",
+    "group": "project",
+    "groupLabel": "Projekt a podklady"
+  },
+  {
+    "id": "lock",
+    "label": "Uzamčeno",
+    "group": "project",
+    "groupLabel": "Projekt a podklady"
+  },
+  {
+    "id": "pan",
+    "label": "Posunout podklad",
+    "group": "drawing",
+    "groupLabel": "Kreslicí nástroje"
+  },
+  {
+    "id": "calibrate",
+    "label": "Nastavit měřítko",
+    "group": "drawing",
+    "groupLabel": "Kreslicí nástroje"
+  },
+  {
+    "id": "draw-wall",
+    "label": "Kreslit stěnu",
+    "group": "drawing",
+    "groupLabel": "Kreslicí nástroje"
+  },
+  {
+    "id": "draw-area",
+    "label": "Kreslit plochu",
+    "group": "drawing",
+    "groupLabel": "Kreslicí nástroje"
+  },
+  {
+    "id": "opening",
+    "label": "Dveřní otvor",
+    "group": "drawing",
+    "groupLabel": "Kreslicí nástroje"
+  },
+  {
+    "id": "stair-opening",
+    "label": "Schodišťový otvor",
+    "group": "drawing",
+    "groupLabel": "Kreslicí nástroje"
+  },
+  {
+    "id": "select",
+    "label": "Vybrat",
+    "group": "drawing",
+    "groupLabel": "Kreslicí nástroje"
+  },
+  {
+    "id": "move",
+    "label": "Přesunout",
+    "group": "drawing",
+    "groupLabel": "Kreslicí nástroje"
+  },
+  {
+    "id": "snap",
+    "label": "Přichytávání",
+    "group": "drawing",
+    "groupLabel": "Kreslicí nástroje"
+  },
+  {
+    "id": "layers",
+    "label": "Vrstvy",
+    "group": "drawing",
+    "groupLabel": "Kreslicí nástroje"
+  },
+  {
+    "id": "undo",
+    "label": "Zpět",
+    "group": "drawing",
+    "groupLabel": "Kreslicí nástroje"
+  },
+  {
+    "id": "redo",
+    "label": "Znovu",
+    "group": "drawing",
+    "groupLabel": "Kreslicí nástroje"
+  },
+  {
+    "id": "delete",
+    "label": "Odstranit",
+    "group": "drawing",
+    "groupLabel": "Kreslicí nástroje"
+  },
+  {
+    "id": "zoom-in",
+    "label": "Přiblížit",
+    "group": "drawing",
+    "groupLabel": "Kreslicí nástroje"
+  },
+  {
+    "id": "zoom-out",
+    "label": "Oddálit",
+    "group": "drawing",
+    "groupLabel": "Kreslicí nástroje"
+  },
+  {
+    "id": "fit",
+    "label": "Přizpůsobit výkres",
+    "group": "drawing",
+    "groupLabel": "Kreslicí nástroje"
+  },
+  {
+    "id": "panel",
+    "label": "Typizovaný panel",
+    "group": "conditions",
+    "groupLabel": "Konstrukce a podmínky"
+  },
+  {
+    "id": "opening-large",
+    "label": "Velkoformátový otvor",
+    "group": "conditions",
+    "groupLabel": "Konstrukce a podmínky"
+  },
+  {
+    "id": "span",
+    "label": "Rozpon konstrukce",
+    "group": "conditions",
+    "groupLabel": "Konstrukce a podmínky"
+  },
+  {
+    "id": "fire",
+    "label": "Požární konstrukce",
+    "group": "conditions",
+    "groupLabel": "Konstrukce a podmínky"
+  },
+  {
+    "id": "truck",
+    "label": "Kamionová doprava",
+    "group": "conditions",
+    "groupLabel": "Konstrukce a podmínky"
+  },
+  {
+    "id": "crane",
+    "label": "Autojeřáb",
+    "group": "conditions",
+    "groupLabel": "Konstrukce a podmínky"
+  },
+  {
+    "id": "installation",
+    "label": "Montáž",
+    "group": "conditions",
+    "groupLabel": "Konstrukce a podmínky"
+  },
+  {
+    "id": "site",
+    "label": "Zařízení staveniště",
+    "group": "conditions",
+    "groupLabel": "Konstrukce a podmínky"
+  },
+  {
+    "id": "price",
+    "label": "Cena",
+    "group": "conditions",
+    "groupLabel": "Konstrukce a podmínky"
+  },
+  {
+    "id": "calculation",
+    "label": "Kalkulace",
+    "group": "conditions",
+    "groupLabel": "Konstrukce a podmínky"
+  },
+  {
+    "id": "receipt",
+    "label": "Rozpad ceny",
+    "group": "conditions",
+    "groupLabel": "Konstrukce a podmínky"
+  },
+  {
+    "id": "complete",
+    "label": "Dokončeno",
+    "group": "status",
+    "groupLabel": "Stavy a obecné akce"
+  },
+  {
+    "id": "warning",
+    "label": "Upozornění",
+    "group": "status",
+    "groupLabel": "Stavy a obecné akce"
+  },
+  {
+    "id": "review-needed",
+    "label": "Vyžaduje posouzení",
+    "group": "status",
+    "groupLabel": "Stavy a obecné akce"
+  },
+  {
+    "id": "info",
+    "label": "Informace",
+    "group": "status",
+    "groupLabel": "Stavy a obecné akce"
+  },
+  {
+    "id": "assumption",
+    "label": "Předpoklad",
+    "group": "status",
+    "groupLabel": "Stavy a obecné akce"
+  },
+  {
+    "id": "saved",
+    "label": "Uloženo",
+    "group": "status",
+    "groupLabel": "Stavy a obecné akce"
+  },
+  {
+    "id": "edit",
+    "label": "Upravit",
+    "group": "status",
+    "groupLabel": "Stavy a obecné akce"
+  },
+  {
+    "id": "save",
+    "label": "Uložit",
+    "group": "status",
+    "groupLabel": "Stavy a obecné akce"
+  },
+  {
+    "id": "send",
+    "label": "Odeslat",
+    "group": "status",
+    "groupLabel": "Stavy a obecné akce"
+  },
+  {
+    "id": "next",
+    "label": "Pokračovat",
+    "group": "status",
+    "groupLabel": "Stavy a obecné akce"
+  },
+  {
+    "id": "back",
+    "label": "Zpět",
+    "group": "status",
+    "groupLabel": "Stavy a obecné akce"
+  },
+  {
+    "id": "expand",
+    "label": "Rozbalit",
+    "group": "status",
+    "groupLabel": "Stavy a obecné akce"
+  },
+  {
+    "id": "collapse",
+    "label": "Sbalit",
+    "group": "status",
+    "groupLabel": "Stavy a obecné akce"
+  },
+  {
+    "id": "close",
+    "label": "Zavřít",
+    "group": "status",
+    "groupLabel": "Stavy a obecné akce"
+  },
+  {
+    "id": "plus",
+    "label": "Přidat",
+    "group": "status",
+    "groupLabel": "Stavy a obecné akce"
+  },
+  {
+    "id": "minus",
+    "label": "Odebrat",
+    "group": "status",
+    "groupLabel": "Stavy a obecné akce"
+  },
+  {
+    "id": "search",
+    "label": "Hledat",
+    "group": "status",
+    "groupLabel": "Stavy a obecné akce"
+  },
+  {
+    "id": "copy",
+    "label": "Duplikovat",
+    "group": "status",
+    "groupLabel": "Stavy a obecné akce"
+  },
+  {
+    "id": "settings",
+    "label": "Nastavení",
+    "group": "status",
+    "groupLabel": "Stavy a obecné akce"
+  }
+]

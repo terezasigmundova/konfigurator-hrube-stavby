@@ -1,0 +1,29 @@
+:root {
+  --ink: #181a1c;
+  --surface-warm: #f7f6f4;
+  --action: #4dbde6;
+  --focus: #0e82c5;
+  --success: #15803d;
+  --warning: #a65f1a;
+
+  /* Legacy mappings */
+  --vesper-navy: var(--ink);
+  --vesper-teal: var(--action);
+  --vesper-amber: var(--warning);
+  --vesper-green: var(--success);
+  --vesper-red: #dc2626;
+
+  --vesper-surface: #ffffff;
+  --vesper-background: var(--surface-warm);
+  --vesper-surface-soft: #fcfbf9;
+  --vesper-border: #d8dee8;
+  --vesper-text: var(--ink);
+  --vesper-text-muted: #5e6675;
+  --vesper-focus: rgba(14, 130, 197, 0.25);
+
+  --vesper-radius-action: 12px;
+  --vesper-radius-pill: 999px;
+  --vesper-control-sm: 36px;
+  --vesper-control-md: 44px;
+  --vesper-control-lg: 52px;
+}

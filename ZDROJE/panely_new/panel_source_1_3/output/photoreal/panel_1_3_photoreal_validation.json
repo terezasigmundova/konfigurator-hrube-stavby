@@ -1,0 +1,19 @@
+{
+  "panel_id": "1.3",
+  "status": "PASS",
+  "approved_geometry_sha256": "34e23db9775a91117aad22eee3f501d864265329cb3b5c15de19f191676ec8b6",
+  "render_standard_id": "PREFA_SOPIK_RENDER_STD_01",
+  "material_library_id": "PREFA_SOPIK_MATERIALS_02",
+  "total_thickness_mm": 225.5,
+  "logical_layer_count": 6,
+  "interactive_asset_count": 12,
+  "states": [
+    "full",
+    "assembled_cutaway",
+    "exploded"
+  ],
+  "transparent_background": true,
+  "camera_projection": "orthographic",
+  "electrical_preparation_included": false,
+  "customer_completion_documented": true
+}

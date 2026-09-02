@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0",
+  "panel_id": "1.3",
+  "category": "exterior_wall",
+  "name": "Ekonomický základní panel s otevřenou instalační předstěnou, bez kontaktního zateplení a fasády",
+  "derived_from_panel_id": "1.1",
+  "units": "mm",
+  "reference_sample": {"width_mm": 625.0, "height_mm": 900.0},
+  "declared_delivered_thickness_mm": 225.5,
+  "delivery_note": "Ekonomická varianta se na straně interiéru dodává s otevřeným 40mm roštem instalační předstěny. Minerální izolace této předstěny, vnitřní zaklopení deskou Fermacell a veškerá příprava pro elektroinstalaci nejsou součástí dodávky a zcela je zajišťuje klient. Exteriér končí surovou deskou Fermacell; kontaktní tepelná izolace, fasádní systém ani finální fasáda nejsou součástí dodávky.",
+  "electrical_preparation": {
+    "included": false,
+    "responsibility": "client",
+    "host_layer_ids": ["L01"],
+    "supplier_included_items": [],
+    "client_supplied_items": [
+      "veškerá příprava pro elektroinstalaci v předstěně",
+      "elektroinstalační chráničky",
+      "vývrty pro elektroinstalační krabice"
+    ]
+  },
+  "customer_completion": {
+    "required": true,
+    "host_layer_ids": ["L01"],
+    "user_heading": "Elektro-přípravu a dokončení předstěny zajišťuje klient",
+    "user_description": "Součástí dodávky je pouze otevřený dřevěný rošt instalační předstěny tloušťky 40 mm. Klient si zcela zajišťuje přípravu pro elektroinstalaci, vložení minerální izolace do předstěny a její vnitřní zaklopení deskou Fermacell včetně finální povrchové úpravy.",
+    "client_supplied_items": [
+      "příprava pro elektroinstalaci včetně chrániček a vývrtů pro krabice",
+      "minerální izolace do 40mm instalační předstěny",
+      "vnitřní deska Fermacell 12,5 mm",
+      "finální povrchová úprava interiéru"
+    ]
+  },
+  "layers": [
+    {
+      "id": "L01", "order": 1, "derived_from_layer_id": "L02",
+      "name": "Instalační předstěna z latí 60/40 mm",
+      "material_id": "kvh_spruce", "geometry": "frame",
+      "frame_layout": "single_centered_member", "member_axis": "vertical",
+      "thickness_mm": 40.0, "member_face_width_mm": 60.0, "member_depth_mm": 40.0,
+      "additive_to_total": true, "exploded_group": 0,
+      "mass_kg_m2": 2.0, "lambda_w_mk": 0.18, "fire_class": "C3",
+      "function": "Dodávaný otevřený dřevěný rošt. Elektro-přípravu, izolaci dutiny a vnitřní zaklopení deskou Fermacell zajišťuje klient."
+    },
+    {
+      "id": "L02", "order": 2, "derived_from_layer_id": "L04",
+      "name": "Sádrovláknitá deska Fermacell 12,5 mm",
+      "material_id": "fermacell_raw", "geometry": "solid",
+      "thickness_mm": 12.5, "additive_to_total": true, "exploded_group": 1,
+      "mass_kg_m2": 15.0, "lambda_w_mk": 0.32, "fire_class": "A2",
+      "function": "Ztužující opláštění před nosnou konstrukcí a souvislý podklad parotěsné roviny; po dokončení klientem zůstává uvnitř instalační předstěny."
+    },
+    {
+      "id": "L03", "order": 3, "derived_from_layer_id": "L05",
+      "name": "Parozábrana",
+      "material_id": "vapour_membrane", "geometry": "solid",
+      "thickness_mm": 0.5, "additive_to_total": true, "exploded_group": 2,
+      "mass_kg_m2": 1.0, "lambda_w_mk": null, "fire_class": null,
+      "function": "Omezení průniku vodní páry z interiéru do nosné části panelu."
+    },
+    {
+      "id": "L04", "order": 4, "derived_from_layer_id": "L06",
+      "name": "Nosný rám KVH 60/160 mm",
+      "material_id": "kvh_spruce", "geometry": "frame",
+      "frame_layout": "single_centered_member", "member_axis": "vertical",
+      "thickness_mm": 160.0, "member_face_width_mm": 60.0, "member_depth_mm": 160.0,
+      "additive_to_total": true, "exploded_group": 3,
+      "mass_kg_m2": 10.0, "lambda_w_mk": 0.18, "fire_class": "C3",
+      "function": "Hlavní nosná dřevěná konstrukce obvodového panelu."
+    },
+    {
+      "id": "L05", "order": 5, "derived_from_layer_id": "L07",
+      "name": "Minerální izolace v nosném rámu",
+      "material_id": "mineral_wool_soft", "geometry": "hosted_infill", "host_layer_id": "L04",
+      "thickness_mm": 160.0, "additive_to_total": false, "exploded_group": 3,
+      "mass_kg_m2": null, "lambda_w_mk": 0.035, "fire_class": "A1",
+      "function": "Hlavní tepelněizolační výplň mezi sloupky nosného rámu."
+    },
+    {
+      "id": "L06", "order": 6, "derived_from_layer_id": "L08",
+      "name": "Sádrovláknitá deska Fermacell 12,5 mm",
+      "material_id": "fermacell_raw", "geometry": "solid",
+      "thickness_mm": 12.5, "additive_to_total": true, "exploded_group": 4,
+      "mass_kg_m2": 15.0, "lambda_w_mk": 0.32, "fire_class": "A2",
+      "function": "Vnější ztužující opláštění a dodávaný vnější povrch panelu bez fasádního systému."
+    }
+  ],
+  "materials": {
+    "fermacell_raw": {"label": "Fermacell - surový povrch", "color": "#d7d9d7", "opacity": 1.0},
+    "kvh_spruce": {"label": "KVH smrk", "color": "#d7a96f", "opacity": 1.0},
+    "mineral_wool_soft": {"label": "Minerální izolace", "color": "#dccb7b", "opacity": 0.95},
+    "vapour_membrane": {"label": "Parozábrana", "color": "#3aa9b8", "opacity": 0.72}
+  }
+}

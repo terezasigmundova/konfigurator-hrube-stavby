@@ -1,0 +1,237 @@
+{
+  "panel_id": "1.1",
+  "geometry_sha256": "d51ecc19bec9324c371e05ace2c04cf063c9dabcfa017a4018edec878ba2b0ed",
+  "composites": {
+    "full_png": "output/photoreal/panel_1_1_photoreal_full.png",
+    "assembled_png": "output/photoreal/panel_1_1_photoreal_assembled_cutaway.png",
+    "assembled_webp": "output/photoreal/panel_1_1_photoreal_assembled_cutaway.webp",
+    "exploded_png": "output/photoreal/panel_1_1_photoreal_exploded.png",
+    "exploded_webp": "output/photoreal/panel_1_1_photoreal_exploded.webp"
+  },
+  "layers": [
+    {
+      "state": "assembled",
+      "layer_id": "L01",
+      "sprite": "output/photoreal/layers/assembled/L01.webp",
+      "mask": "output/photoreal/masks/assembled/L01.png"
+    },
+    {
+      "state": "assembled",
+      "layer_id": "L02",
+      "sprite": "output/photoreal/layers/assembled/L02.webp",
+      "mask": "output/photoreal/masks/assembled/L02.png"
+    },
+    {
+      "state": "assembled",
+      "layer_id": "L03",
+      "sprite": "output/photoreal/layers/assembled/L03.webp",
+      "mask": "output/photoreal/masks/assembled/L03.png"
+    },
+    {
+      "state": "assembled",
+      "layer_id": "L04",
+      "sprite": "output/photoreal/layers/assembled/L04.webp",
+      "mask": "output/photoreal/masks/assembled/L04.png"
+    },
+    {
+      "state": "assembled",
+      "layer_id": "L05",
+      "sprite": "output/photoreal/layers/assembled/L05.webp",
+      "mask": "output/photoreal/masks/assembled/L05.png"
+    },
+    {
+      "state": "assembled",
+      "layer_id": "L06",
+      "sprite": "output/photoreal/layers/assembled/L06.webp",
+      "mask": "output/photoreal/masks/assembled/L06.png"
+    },
+    {
+      "state": "assembled",
+      "layer_id": "L07",
+      "sprite": "output/photoreal/layers/assembled/L07.webp",
+      "mask": "output/photoreal/masks/assembled/L07.png"
+    },
+    {
+      "state": "assembled",
+      "layer_id": "L08",
+      "sprite": "output/photoreal/layers/assembled/L08.webp",
+      "mask": "output/photoreal/masks/assembled/L08.png"
+    },
+    {
+      "state": "assembled",
+      "layer_id": "L09",
+      "sprite": "output/photoreal/layers/assembled/L09.webp",
+      "mask": "output/photoreal/masks/assembled/L09.png"
+    },
+    {
+      "state": "assembled",
+      "layer_id": "L10",
+      "sprite": "output/photoreal/layers/assembled/L10.webp",
+      "mask": "output/photoreal/masks/assembled/L10.png"
+    },
+    {
+      "state": "exploded",
+      "layer_id": "L01",
+      "sprite": "output/photoreal/layers/exploded/L01.webp",
+      "mask": "output/photoreal/masks/exploded/L01.png"
+    },
+    {
+      "state": "exploded",
+      "layer_id": "L02",
+      "sprite": "output/photoreal/layers/exploded/L02.webp",
+      "mask": "output/photoreal/masks/exploded/L02.png"
+    },
+    {
+      "state": "exploded",
+      "layer_id": "L03",
+      "sprite": "output/photoreal/layers/exploded/L03.webp",
+      "mask": "output/photoreal/masks/exploded/L03.png"
+    },
+    {
+      "state": "exploded",
+      "layer_id": "L04",
+      "sprite": "output/photoreal/layers/exploded/L04.webp",
+      "mask": "output/photoreal/masks/exploded/L04.png"
+    },
+    {
+      "state": "exploded",
+      "layer_id": "L05",
+      "sprite": "output/photoreal/layers/exploded/L05.webp",
+      "mask": "output/photoreal/masks/exploded/L05.png"
+    },
+    {
+      "state": "exploded",
+      "layer_id": "L06",
+      "sprite": "output/photoreal/layers/exploded/L06.webp",
+      "mask": "output/photoreal/masks/exploded/L06.png"
+    },
+    {
+      "state": "exploded",
+      "layer_id": "L07",
+      "sprite": "output/photoreal/layers/exploded/L07.webp",
+      "mask": "output/photoreal/masks/exploded/L07.png"
+    },
+    {
+      "state": "exploded",
+      "layer_id": "L08",
+      "sprite": "output/photoreal/layers/exploded/L08.webp",
+      "mask": "output/photoreal/masks/exploded/L08.png"
+    },
+    {
+      "state": "exploded",
+      "layer_id": "L09",
+      "sprite": "output/photoreal/layers/exploded/L09.webp",
+      "mask": "output/photoreal/masks/exploded/L09.png"
+    },
+    {
+      "state": "exploded",
+      "layer_id": "L10",
+      "sprite": "output/photoreal/layers/exploded/L10.webp",
+      "mask": "output/photoreal/masks/exploded/L10.png"
+    }
+  ],
+  "layer_definitions": [
+    {
+      "id": "L01",
+      "name": "Sádrovláknitá deska Fermacell 12,5 mm",
+      "thickness_mm": 12.5,
+      "function": "Vnitřní opláštění a podklad pro finální povrchovou úpravu na stavbě.",
+      "host_layer_id": null
+    },
+    {
+      "id": "L02",
+      "name": "Instalační předstěna z latí 60/40 mm",
+      "thickness_mm": 40.0,
+      "function": "Instalační prostor tloušťky 40 mm pro vedení rozvodů před parotěsnou rovinou. Součástí dodávky jsou projektově určené elektroinstalační chráničky a vývrty pro následné osazení krabic.",
+      "host_layer_id": null
+    },
+    {
+      "id": "L03",
+      "name": "Minerální izolace v instalační předstěně",
+      "thickness_mm": 40.0,
+      "function": "Vyplnění instalační dutiny pro zlepšení tepelných a akustických vlastností.",
+      "host_layer_id": "L02"
+    },
+    {
+      "id": "L04",
+      "name": "Sádrovláknitá deska Fermacell 12,5 mm",
+      "thickness_mm": 12.5,
+      "function": "Ztužující opláštění před nosnou konstrukcí a podklad parotěsné roviny.",
+      "host_layer_id": null
+    },
+    {
+      "id": "L05",
+      "name": "Parozábrana",
+      "thickness_mm": 0.5,
+      "function": "Omezení průniku vodní páry z interiéru do nosné části panelu.",
+      "host_layer_id": null
+    },
+    {
+      "id": "L06",
+      "name": "Nosný rám KVH 60/160 mm",
+      "thickness_mm": 160.0,
+      "function": "Hlavní nosná dřevěná konstrukce obvodového panelu.",
+      "host_layer_id": null
+    },
+    {
+      "id": "L07",
+      "name": "Minerální izolace v nosném rámu",
+      "thickness_mm": 160.0,
+      "function": "Hlavní tepelněizolační výplň mezi sloupky nosného rámu.",
+      "host_layer_id": "L06"
+    },
+    {
+      "id": "L08",
+      "name": "Sádrovláknitá deska Fermacell 12,5 mm",
+      "thickness_mm": 12.5,
+      "function": "Vnější ztužující opláštění nosného rámu a podklad kontaktního zateplení.",
+      "host_layer_id": null
+    },
+    {
+      "id": "L09",
+      "name": "Minerální fasádní tepelná izolace",
+      "thickness_mm": 100.0,
+      "function": "Kontaktní zateplení omezující tepelné mosty rámové konstrukce.",
+      "host_layer_id": null
+    },
+    {
+      "id": "L10",
+      "name": "Armovací stěrka s perlinkou",
+      "thickness_mm": 3.0,
+      "function": "Základní vyztužená vrstva fasádního systému bez finální omítky.",
+      "host_layer_id": null
+    }
+  ],
+  "features": [
+    {
+      "id": "EP01",
+      "type": "electrical_preparation",
+      "included": true,
+      "scope_basis": "schválená výrobní dokumentace",
+      "host_layer_ids": [
+        "L02",
+        "L03"
+      ],
+      "included_items": [
+        "elektroinstalační chráničky (husí krky)",
+        "vývrty pro následné osazení elektroinstalačních krabic"
+      ],
+      "excluded_items": [
+        "elektroinstalační krabice",
+        "kabeláž",
+        "zásuvky, vypínače a další koncové přístroje",
+        "zapojení",
+        "revize elektroinstalace"
+      ],
+      "user_heading": "Příprava pro elektroinstalaci je součástí panelu",
+      "user_description": "Panel obsahuje 40mm instalační předstěnu. V rozsahu schválené výrobní dokumentace jsou připraveny elektroinstalační chráničky (husí krky) a vývrty pro následné osazení elektroinstalačních krabic. Vedení je připraveno před parotěsnou rovinou, takže při dokončení elektroinstalace není nutné zasahovat do nosné konstrukce ani porušovat parozábranu.",
+      "interaction": {
+        "hover_target_layer_ids": [
+          "L02",
+          "L03"
+        ],
+        "on_select": "show_feature_description"
+      }
+    }
+  ]
+}

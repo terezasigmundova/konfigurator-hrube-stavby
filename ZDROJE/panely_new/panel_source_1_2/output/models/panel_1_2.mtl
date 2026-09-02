@@ -1,0 +1,25 @@
+# Deterministic control materials
+newmtl fermacell_raw
+Kd 0.843137 0.850980 0.843137
+d 1.000000
+illum 2
+
+newmtl kvh_spruce
+Kd 0.843137 0.662745 0.435294
+d 1.000000
+illum 2
+
+newmtl mineral_wool_soft
+Kd 0.862745 0.796078 0.482353
+d 0.950000
+illum 2
+
+newmtl vapour_membrane
+Kd 0.227451 0.662745 0.721569
+d 0.720000
+illum 2
+
+newmtl diffusion_membrane
+Kd 0.203922 0.231373 0.239216
+d 0.900000
+illum 2

@@ -1,0 +1,199 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model Project {
+  id               String            @id @default(uuid())
+  name             String
+  ownerId          String?
+  activeRevisionId String?
+  createdAt        DateTime          @default(now())
+  updatedAt        DateTime          @updatedAt
+  inputs           ProjectInput?
+  revisions        ProjectRevision[]
+  documents        SourceDocument[]
+}
+
+model ProjectInput {
+  id                 String   @id @default(uuid())
+  projectId          String   @unique
+  project            Project  @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  municipalityName   String
+  municipalityCode   String
+  postalCode         String
+  truckAccess        String   @default("UNKNOWN")
+  craneAccess        String   @default("UNKNOWN")
+  storeysCount       Int      @default(1)
+  targetAssemblyDate String
+  notes              String?
+}
+
+model ProjectRevision {
+  id                String             @id @default(uuid())
+  projectId         String
+  project           Project            @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  revisionNumber    Int                @default(1)
+  status            String             @default("DRAFT")
+  createdAt         DateTime           @default(now())
+  storeys           Storey[]
+  elements          ConstructionElement[]
+  pricingLines      PricingLine[]
+  surchargeTriggers SurchargeTrigger[]
+  snapshots         PricingSnapshot[]
+}
+
+model SourceDocument {
+  id           String         @id @default(uuid())
+  projectId    String
+  project      Project        @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  originalName String
+  mimeType     String
+  fileSize     Int
+  fileHash     String
+  storagePath  String
+  createdAt    DateTime       @default(now())
+  sheets       DrawingSheet[]
+}
+
+model DrawingSheet {
+  id          String       @id @default(uuid())
+  documentId  String
+  document    SourceDocument @relation(fields: [documentId], references: [id], onDelete: Cascade)
+  storeyId    String?
+  storey      Storey?      @relation(fields: [storeyId], references: [id])
+  pageNumber  Int          @default(1)
+  purpose     String
+  cropData    String?
+  rotation    Int          @default(0)
+  opacity     Float        @default(0.5)
+  isLocked    Boolean      @default(true)
+  calibration Calibration?
+}
+
+model Calibration {
+  id                String       @id @default(uuid())
+  drawingSheetId    String       @unique
+  drawingSheet      DrawingSheet @relation(fields: [drawingSheetId], references: [id], onDelete: Cascade)
+  pointA            String
+  pointB            String
+  realDistanceM     Float
+  scaleMetresPerPx  Float
+  isConfirmed       Boolean      @default(false)
+  createdAt         DateTime     @default(now())
+}
+
+model Storey {
+  id           String                @id @default(uuid())
+  revisionId   String
+  revision     ProjectRevision       @relation(fields: [revisionId], references: [id], onDelete: Cascade)
+  storeyNumber Int
+  name         String
+  clearHeightM Float                 @default(2.60)
+  sheets       DrawingSheet[]
+  elements     ConstructionElement[]
+}
+
+model ConstructionElement {
+  id               String          @id @default(uuid())
+  revisionId       String
+  revision         ProjectRevision @relation(fields: [revisionId], references: [id], onDelete: Cascade)
+  storeyId         String
+  storey           Storey          @relation(fields: [storeyId], references: [id], onDelete: Cascade)
+  category         String
+  catalogCode      String
+  sourcePoints     String
+  normalizedPoints String
+  modelPoints      String
+  origin           String          @default("USER_TRACE")
+  isConfirmed      Boolean         @default(true)
+  openings         Opening[]
+  pricingLines     PricingLine[]
+}
+
+model Opening {
+  id             String              @id @default(uuid())
+  elementId      String
+  element        ConstructionElement @relation(fields: [elementId], references: [id], onDelete: Cascade)
+  positionOffset Float
+  widthM         Float
+  heightM        Float
+  areaM2         Float
+  origin         String              @default("USER_TRACE")
+}
+
+model CatalogVersion {
+  id          String        @id @default(uuid())
+  versionName String
+  isCurrent   Boolean       @default(true)
+  createdAt   DateTime      @default(now())
+  items       CatalogItem[]
+}
+
+model CatalogItem {
+  id               String         @id @default(uuid())
+  catalogVersionId String
+  catalogVersion   CatalogVersion @relation(fields: [catalogVersionId], references: [id], onDelete: Cascade)
+  code             String
+  name             String
+  category         String
+  thicknessMm      Float
+  description      String?
+  unit             String         @default("m2")
+}
+
+model PriceBookVersion {
+  id          String      @id @default(uuid())
+  versionName String
+  isCurrent   Boolean     @default(true)
+  currency    String      @default("CZK")
+  createdAt   DateTime    @default(now())
+  items       PriceItem[]
+}
+
+model PriceItem {
+  id                 String           @id @default(uuid())
+  priceBookVersionId String
+  priceBookVersion   PriceBookVersion @relation(fields: [priceBookVersionId], references: [id], onDelete: Cascade)
+  catalogCode        String
+  unitPriceExVat     Float
+}
+
+model SurchargeTrigger {
+  id               String          @id @default(uuid())
+  revisionId       String
+  revision         ProjectRevision @relation(fields: [revisionId], references: [id], onDelete: Cascade)
+  code             String
+  status           String          @default("REQUIRES_INFORMATION")
+  description      String
+  affectedElements String?
+  createdAt        DateTime        @default(now())
+}
+
+model PricingLine {
+  id             String               @id @default(uuid())
+  revisionId     String
+  revision       ProjectRevision      @relation(fields: [revisionId], references: [id], onDelete: Cascade)
+  elementId      String?
+  element        ConstructionElement? @relation(fields: [elementId], references: [id])
+  lineType       String
+  title          String
+  quantity       Float
+  unit           String
+  unitPriceExVat Float
+  totalExVat     Float
+}
+
+model PricingSnapshot {
+  id                   String          @id @default(uuid())
+  revisionId           String
+  revision             ProjectRevision @relation(fields: [revisionId], references: [id], onDelete: Cascade)
+  catalogVersionName   String
+  priceBookVersionName String
+  snapshotData         String
+  createdAt            DateTime        @default(now())
+}
